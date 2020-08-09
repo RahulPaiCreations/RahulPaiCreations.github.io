@@ -10,13 +10,13 @@ import s from '../styles/app.style';
 export default function App() {
   return (
     <div style={s.root}>
-      <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
+      <h1 style={s.title}>Rahul Pai Creations - Blender Portfolio</h1>
       <Interactive
         as="a"
-        href="https://github.com/rafrex/spa-github-pages"
+        href="https://github.com/RahulPaiCreations/rahulpaicreations.github.io"
         style={s.repoLink}
         {...s.link}
-      >https://github.com/rafrex/spa-github-pages</Interactive>
+      >https://github.com/RahulPaiCreations/rahulpaicreations.github.io</Interactive>
 
       <nav style={s.breadcrumbs}>
         <Breadcrumbs />
