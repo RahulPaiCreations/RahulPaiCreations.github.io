@@ -1,4 +1,4 @@
-@echo on
+@echo off
 echo "Build"
 call npm run build
 echo "Commit Build"
