@@ -3,21 +3,21 @@ import PropTypes from 'prop-types';
 
 const link = {
   normal: {
-    borderBottom: '1px dotted rgb(0, 168, 0)',
+    borderBottom: '1px dotted rgb(0, 168, 168)',
   },
   hover: {
-    borderBottom: '1px solid rgb(0, 168, 0)',
-    color: 'black',
+    borderBottom: '1px solid rgb(0, 168, 168)',
+    color: 'grey',
   },
   active: 'hover',
   touchActive: {
-    borderBottom: '1px dashed rgb(0, 168, 0)',
-    color: 'black',
+    borderBottom: '1px dashed rgb(0, 168, 168)',
+    color: 'grey',
   },
   focusFromTab: {
-    outline: '2px solid rgb(0, 152, 0)',
+    outline: '2px solid rgb(0, 152, 152)',
     outlineOffset: '2px',
-    color: 'black',
+    color: 'grey',
   },
   touchActiveTapOnly: true,
 };

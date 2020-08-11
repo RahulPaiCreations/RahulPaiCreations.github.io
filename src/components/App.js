@@ -1,16 +1,16 @@
 import React from 'react';
 import Interactive from 'react-interactive';
-import { Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import ExampleComponent from './ExampleComponent';
+import Blender from './Blender';
 import PageNotFound from './PageNotFound';
-import Breadcrumbs from './Breadcrumbs';
 import s from '../styles/app.style';
 
 export default function App() {
   return (
     <div style={s.root}>
-      <h1 style={s.title}>Rahul Pai Creations - Blender Portfolio</h1>
+      <h1 style={s.title}>Rahul Pai Creations</h1>
       <Interactive
         as="a"
         href="https://github.com/RahulPaiCreations/rahulpaicreations.github.io"
@@ -18,13 +18,24 @@ export default function App() {
         {...s.link}
       >https://github.com/RahulPaiCreations/rahulpaicreations.github.io</Interactive>
 
-      <nav style={s.breadcrumbs}>
-        <Breadcrumbs />
+      <nav style={s.nav}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/"
+        >Home</Interactive>
+        &nbsp;|&nbsp;
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/blender"
+        >Blender</Interactive>
       </nav>
 
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/example" component={ExampleComponent} />
+        <Route path="/blender" component={Blender} />
         <Route component={PageNotFound} />
       </Switch>
 

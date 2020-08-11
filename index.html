@@ -3,33 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rahul Pai Creations - Blender Portfolio</title>
-    <meta name="description" content="Lightweight solution for deploying single page apps with GitHub Pages. Code and concept by Rafael Pedicini.">
+    <title>Rahul Pai Creations</title>
+    <meta name="description" content="Portfolio of all my Blender projects">
 
-    <style>
-      html, body, div, span, a, p, ul, li, h1, code, nav {
-        margin: 0;
-        border: 0;
-        padding: 0;
-        box-sizing: inherit;
-        font: inherit;
-        text-decoration: inherit;
-        text-align: inherit;
-        color: white;
-        background: transparent;
-      }
-      /*pass window height (w/o scroll bars) down to react app, note can't use vh becasue that
-      includes scroll bars and mobile browser footer, etc so doesn't give viewable area*/
-      html, body { height: 100%; }
-      html { background-color: rgb(0, 120, 0); }
-      #root { background-image: url(assets/hexo3.png); min-height: 100%; background-size:cover;}
-
-      /*required for IE/Edge to be compatible with left:50vw & transform:translate(-50%, 0),
-      otherwise there is a phantom div on the right side of the screen (from the left:50vw),
-      that the window will scroll to. Note the left:50vw and transform is used to center content
-      horizaontally based on vw to prevent content jump when vertical scroll bar show/hide.*/
-      body { overflow-x: hidden; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">

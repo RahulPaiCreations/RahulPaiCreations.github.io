@@ -41,6 +41,13 @@ export default function Home() {
           to="/example/two-deep?field1=foo&field2=bar#boom!"
         >Example two deep with query and hash</Interactive>
       </div>
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/blender"
+        >Blender</Interactive>
+      </div>
     </div>
   );
 }

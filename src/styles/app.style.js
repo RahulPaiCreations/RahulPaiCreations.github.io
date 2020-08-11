@@ -40,7 +40,7 @@ s.repoLink = {
   fontSize: '14px',
 };
 
-s.breadcrumbs = {
+s.nav = {
   margin: '3vh 0',
 };
 

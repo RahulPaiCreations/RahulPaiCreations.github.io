@@ -2,7 +2,7 @@
   "name": "rahulpaicreations.github.io",
   "version": "5.1.0",
   "private": true,
-  "description": "Rahul Pai Creations - Blender Portfolio",
+  "description": "Rahul Pai Creations",
   "scripts": {
     "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open",
     "build": "webpack -p"
