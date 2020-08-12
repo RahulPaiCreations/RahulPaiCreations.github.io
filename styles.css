@@ -24,3 +24,25 @@ otherwise there is a phantom div on the right side of the screen (from the left:
 that the window will scroll to. Note the left:50vw and transform is used to center content
 horizaontally based on vw to prevent content jump when vertical scroll bar show/hide.*/
 body { overflow-x: hidden; }
+
+.activeNav{
+    color: cyan;
+}
+
+nav{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+nav span a{
+    padding: 1em;
+    border: 1px;
+}
+nav span:first-child a{
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+nav span:last-child a{
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}

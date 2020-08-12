@@ -15,6 +15,20 @@ export default function Home() {
 
   return (
     <div>
+      <nav style={s.nav} className="nav nav-pills nav-fill">
+        <Interactive
+          as={Link}
+          {...s.navItem}
+          to="/"
+          className="nav-item nav-link activeNav"
+        >Home</Interactive>
+        <Interactive
+          as={Link}
+          {...s.navItem}
+          to="/blender"
+          className="nav-item nav-link"
+        >Blender</Interactive>
+      </nav>
       <p style={s.p}>
         This is an example single page app built
         with React and React&nbsp;Router using {' '}

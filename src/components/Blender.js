@@ -6,6 +6,21 @@ import s from '../styles/exampleComponent.style';
 
 export default function Blender() {
   return (
+<div>
+    <nav style={s.nav} className="nav nav-pills nav-fill">
+      <Interactive
+        as={Link}
+        {...s.navItem}
+        to="/"
+        className="nav-item nav-link"
+      >Home</Interactive>
+      <Interactive
+        as={Link}
+        {...s.navItem}
+        to="/blender"
+        className="nav-item nav-link activeNav"
+      >Blender</Interactive>
+    </nav>
     <Switch>
       <Route exact path="/blender/pidom-fighter" render={() => (
           <div>
@@ -29,5 +44,6 @@ export default function Blender() {
       />
       <Route component={PageNotFound} />
     </Switch>
+    </div>
   );
 }

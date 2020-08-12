@@ -7,17 +7,34 @@ const link = {
   },
   hover: {
     borderBottom: '1px solid rgb(0, 168, 168)',
-    color: 'grey',
   },
   active: 'hover',
   touchActive: {
     borderBottom: '1px dashed rgb(0, 168, 168)',
-    color: 'grey',
   },
   focusFromTab: {
     outline: '2px solid rgb(0, 152, 152)',
     outlineOffset: '2px',
-    color: 'grey',
+    color: 'cyan',
+  },
+  touchActiveTapOnly: true,
+};
+
+const navItem = {
+  normal: {
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+  },
+  hover: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  active: 'hover',
+  touchActive: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  focusFromTab: {
+    outline: '2px solid rgb(152, 152, 152)',
+    outlineOffset: '2px',
+    color: 'cyan',
   },
   touchActiveTapOnly: true,
 };
@@ -36,6 +53,7 @@ export default {
     margin: '3vh 0',
     lineHeight: '1.4',
   },
+  navItem
 };
 
 export const Code = ({ children }) => (
