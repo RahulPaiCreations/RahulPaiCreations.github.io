@@ -3,7 +3,9 @@ import Interactive from 'react-interactive';
 import { Switch, Route, Link } from 'react-router-dom';
 import ExampleTwoDeepComponent from './ExampleTwoDeepComponent';
 import PageNotFound from './PageNotFound';
-import s from '../styles/exampleComponent.style';
+import style from '../style';
+
+const s = Object.create(style);
 
 const ExamplePageText = () => (
   <p style={s.p}>
@@ -30,7 +32,7 @@ export default function ExampleComponent() {
         render={() => (
           <div>
             <ExamplePageText />
-            <div style={s.pageLinkContainer}>
+            <div style={{margin: '1vh 0'}}>
               <Interactive
                 as={Link}
                 {...s.link}

@@ -1,8 +1,10 @@
 import React from 'react';
 import Interactive from 'react-interactive';
 import { Link } from 'react-router-dom';
-import { Code } from '../styles/style';
-import s from '../styles/home.style';
+import { Code } from '../style';
+import style from '../style';
+
+const s = Object.create(style);
 
 export default function Home() {
   const repoReadmeLink = text => (
@@ -15,47 +17,31 @@ export default function Home() {
 
   return (
     <div>
-      <nav style={s.nav} className="nav nav-pills nav-fill">
-        <Interactive
-          as={Link}
-          {...s.navItem}
-          to="/"
-          className="nav-item nav-link activeNav"
-        >Home</Interactive>
-        <Interactive
-          as={Link}
-          {...s.navItem}
-          to="/blender"
-          className="nav-item nav-link"
-        >Blender</Interactive>
-      </nav>
       <p style={s.p}>
-        This is an example single page app built
-        with React and React&nbsp;Router using {' '}
-        <Code>BrowserRouter</Code>. Navigate with the links below and
-        refresh the page or copy/paste the url to test out the redirect
-        functionality deployed to overcome GitHub&nbsp;Pages incompatibility
-        with single page apps (like this one).
+      Hi, I'm Rahul Pai. I am an Engineering student at the University of Cambridge.
+      On this website I show various projects I have done in my own time.
+      My career interests are in software development and Blender is a hobby of mine.
+      Most of my experience is in Python, which I used for WAV Randomiser and the StumPi interface.
+      I have also used C# in Unity 3D, Java for Android app development and C++ for various coursework projects at Uni.
       </p>
       <p style={s.p}>
-        Please see the {repoReadmeLink('repo readme')} for instructions on how to
-        use this boilerplate to deploy your own single page app using GitHub Pages.
+        I used {repoReadmeLink('this template')} for this single page app using GitHub Pages.
       </p>
-      <div style={s.pageLinkContainer}>
+      <div style={{margin: '1vh 0'}}>
         <Interactive
           as={Link}
           {...s.link}
           to="/example"
         >Example page</Interactive>
       </div>
-      <div style={s.pageLinkContainer}>
+      <div style={{margin: '1vh 0'}}>
         <Interactive
           as={Link}
           {...s.link}
           to="/example/two-deep?field1=foo&field2=bar#boom!"
         >Example two deep with query and hash</Interactive>
       </div>
-      <div style={s.pageLinkContainer}>
+      <div style={{margin: '1vh 0'}}>
         <Interactive
           as={Link}
           {...s.link}

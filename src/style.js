@@ -50,10 +50,9 @@ export default {
   link,
   childLink,
   p: {
-    margin: '3vh 0',
+    marginBottom: '3vh',
     lineHeight: '1.4',
-  },
-  navItem
+  }
 };
 
 export const Code = ({ children }) => (

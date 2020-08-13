@@ -6,7 +6,7 @@ html, body, div, span, a, p, ul, li, h1, code, nav {
     font: inherit;
     text-decoration: inherit;
     text-align: inherit;
-    color: white;
+    color: black;
     background: transparent;
 }
 /*pass window height (w/o scroll bars) down to react app, note can't use vh becasue that
@@ -25,24 +25,56 @@ that the window will scroll to. Note the left:50vw and transform is used to cent
 horizaontally based on vw to prevent content jump when vertical scroll bar show/hide.*/
 body { overflow-x: hidden; }
 
+.appRoot{
+  font-family: helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  padding: 3vh 0 3vh 0;
+  width: 70%;
+  margin: 0 auto;
+  /* use responsive max-width to simulate padding/margin to allow
+  space for vertical scroll bar without creating horizontal scroll bar
+  (if there is padding, the window will scroll horizontally to show the padding) */
+  max-width: calc(100vw - 40px);
+  text-size-adjust: none;
+}
+
 .activeNav{
     color: cyan;
 }
 
 nav{
-    margin-top: 1em;
-    margin-bottom: 1em;
+    /* margin-top: 1em;
+    margin-bottom: 1em; */
+    margin: 3vh 1em;
+    display: inline-block;
 }
 
-nav span a{
-    padding: 1em;
-    border: 1px;
+nav a{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1ex 2ex;
+    border: 1px solid grey;
+    color: white;
 }
-nav span:first-child a{
+
+nav a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+}
+nav a:first-child{
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
 }
-nav span:last-child a{
+nav a:last-child{
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
+}
+
+.appContent{
+    background-color: rgba(255,255,255, 0.8);
+    border-radius: 1vh;
+    border: 2px solid rgb(148, 148, 148);
+    padding: 3vh;
+    color: black;
 }

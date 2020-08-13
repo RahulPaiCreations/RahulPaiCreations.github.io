@@ -2,25 +2,13 @@ import React from 'react';
 import Interactive from 'react-interactive';
 import { Switch, Route, Link } from 'react-router-dom';
 import PageNotFound from './PageNotFound';
-import s from '../styles/exampleComponent.style';
+import style from '../style';
+
+const s = Object.create(style);
 
 export default function Blender() {
   return (
 <div>
-    <nav style={s.nav} className="nav nav-pills nav-fill">
-      <Interactive
-        as={Link}
-        {...s.navItem}
-        to="/"
-        className="nav-item nav-link"
-      >Home</Interactive>
-      <Interactive
-        as={Link}
-        {...s.navItem}
-        to="/blender"
-        className="nav-item nav-link activeNav"
-      >Blender</Interactive>
-    </nav>
     <Switch>
       <Route exact path="/blender/pidom-fighter" render={() => (
           <div>
