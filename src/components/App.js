@@ -13,7 +13,7 @@ const s = Object.create(style);
 export default function App() {
   return (
     <div className="appRoot">
-      <img src="assets/rpc_logo.svg" className="logo"/>
+      <Link to="/home"><img src="assets/rpc_logo.svg" className="logo"/></Link>
       
       <nav>
         <NavLink to="/home" activeClassName="activeNav" >Home</NavLink>

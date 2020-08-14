@@ -85,3 +85,55 @@ nav a:last-child{
     padding: 3vh;
     color: black;
 }
+
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-size: x-large;
+    color: rgb(0, 142, 189);
+    margin-bottom: 1em;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .buttonBack {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: transparent;
+    border-radius: 1vh;
+    color: white;
+  }
+  
+  .buttonNext {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: transparent;
+    border-radius: 1vh;
+    color: white;
+  }
+  
+  
+  .dotGroup {
+    text-align: center;
+  }
+
+.dotGroup button{
+    background-color: white;
+    border-radius: 0;
+}
+  
+.dotGroup {
+  text-align: center;
+}
+
+.dotGroup button.carousel__dot--selected{
+  background-color: black;
+}
