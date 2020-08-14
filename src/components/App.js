@@ -4,6 +4,7 @@ import { Link, Switch, Route, NavLink, Redirect } from 'react-router-dom';
 import Home from './Home';
 import ExampleComponent from './ExampleComponent';
 import Blender from './Blender';
+import About from './About';
 import PageNotFound from './PageNotFound';
 import style from '../style';
 
@@ -12,12 +13,12 @@ const s = Object.create(style);
 export default function App() {
   return (
     <div className="appRoot">
-      <img src="assets/rpc.svg" style={{width: "200px", marginBottom: "-1ex"}}/>
+      <img src="assets/rpc_logo.svg" className="logo"/>
       
       <nav>
         <NavLink to="/home" activeClassName="activeNav" >Home</NavLink>
         <NavLink to="/blender" activeClassName="activeNav" >Blender</NavLink>
-        <a href="https://github.com/RahulPaiCreations/rahulpaicreations.github.io" >Source</a>
+        <NavLink to="/about" activeClassName="activeNav" >About</NavLink>
       </nav>
 
       <div className="appContent">
@@ -26,6 +27,7 @@ export default function App() {
           <Route exact path="/home" component={Home} />
           <Route path="/example" component={ExampleComponent} />
           <Route path="/blender" component={Blender} />
+          <Route path="/about" component={About} />
           <Route component={PageNotFound} />
         </Switch>
 

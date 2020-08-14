@@ -24,9 +24,6 @@ export default function Home() {
       Most of my experience is in Python, which I used for WAV Randomiser and the StumPi interface.
       I have also used C# in Unity 3D, Java for Android app development and C++ for various coursework projects at Uni.
       </p>
-      <p style={s.p}>
-        I used {repoReadmeLink('this template')} for this single page app using GitHub Pages.
-      </p>
       <div style={{margin: '1vh 0'}}>
         <Interactive
           as={Link}
