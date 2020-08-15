@@ -31,7 +31,7 @@ export default function App() {
           <Route component={PageNotFound} />
         </Switch>
 
-        <div style={{color: '#A0A0A0', fontSize: '14px', marginTop: '50px'}}>
+        {/* <div style={{color: '#A0A0A0', fontSize: '14px', marginTop: '50px'}}>
           <Interactive
             as="a"
             href="http://www.rafaelpedicini.com"
@@ -42,7 +42,7 @@ export default function App() {
           >
             Code and concept by <span {...s.childLink}>Rafael Pedicini</span>
           </Interactive>
-        </div>
+        </div> */}
       </div>
     </div>
   );

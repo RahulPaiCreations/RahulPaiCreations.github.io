@@ -2,6 +2,7 @@ import React from 'react';
 import Interactive from 'react-interactive';
 import { Switch, Route, Link } from 'react-router-dom';
 import PageNotFound from './PageNotFound';
+import Fireship from './blender/Fireship';
 import style from '../style';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ImageWithZoom, DotGroup } from 'pure-react-carousel';
 
@@ -9,62 +10,24 @@ const s = Object.create(style);
 
 export default function Blender() {
   return (
-<div>
-    <Switch>
-      <Route exact path="/blender/fireship" render={() => (
-          <div>
-            <h1 className="title">Pidom Fighter 314</h1>
-            <p style={s.p}>
-              This amazing space ship was inspired from star wars, but is very different in many ways.
-              It has a long front glass window that opens upwards and two laser guns at the sides.
-              This was my first ever project in Blender and so it is quite special to me, despite its simplicity.
-              I added the background using Photoshop because I didn't know about the compositor at the time.
-            </p>
-            <CarouselProvider
-              naturalSlideWidth={100}
-              naturalSlideHeight={60}
-              totalSlides={4}
-              hasMasterSpinner
-              infinite
-            >
-              <div style={{position: "relative"}}>
-                <Slider style={{borderRadius:"3vh"}}>
-                  <Slide index={0}> 
-                    <ImageWithZoom src="../../assets/1-fireship/1.png" />
-                  </Slide>
-                  <Slide index={1}>
-                    <ImageWithZoom src="../../assets/1-fireship/2.png" />
-                  </Slide>
-                  <Slide index={2}>
-                    <ImageWithZoom src="../../assets/1-fireship/3.png" />
-                  </Slide>
-                  <Slide index={3}>
-                    <ImageWithZoom src="../../assets/1-fireship/4.png" />
-                  </Slide>
-                </Slider>
-                <ButtonBack className="buttonBack">⮜</ButtonBack>
-                <ButtonNext className="buttonNext">⮞</ButtonNext>
+    <div>
+      <Switch>
+        <Route exact path="/blender/fireship" component={Fireship}/>
+        <Route
+          exact path="/blender"
+          render={() => (
+            <div>
+              <div style={s.pageLinkContainer}>
+                <Interactive
+                  as={Link}
+                  to="/blender/fireship"
+                ><img src="../../assets/1-fireship/1.png" /></Interactive>
               </div>
-              <DotGroup className="dotGroup" />
-            </CarouselProvider>
-          </div>
-        )}/>
-      <Route
-        exact path="/blender"
-        render={() => (
-          <div>
-            <div style={s.pageLinkContainer}>
-              <Interactive
-                as={Link}
-                {...s.link}
-                to="/blender/fireship"
-              >Pidom Fighter</Interactive>
             </div>
-          </div>
-        )}
-      />
-      <Route component={PageNotFound} />
-    </Switch>
+          )}
+        />
+        <Route component={PageNotFound} />
+      </Switch>
     </div>
   );
 }

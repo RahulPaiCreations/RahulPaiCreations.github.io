@@ -17,6 +17,7 @@ html { background-color: rgb(0, 0, 0); }
     background-image: url(assets/bg.jpg);
     background-size:cover;
     min-height: 100%;
+    background-attachment: fixed;
 }
 
 /*required for IE/Edge to be compatible with left:50vw & transform:translate(-50%, 0),
@@ -25,11 +26,15 @@ that the window will scroll to. Note the left:50vw and transform is used to cent
 horizaontally based on vw to prevent content jump when vertical scroll bar show/hide.*/
 body { overflow-x: hidden; }
 
+code{
+  font-family: monospace;
+}
+
 .appRoot{
   font-family: helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
-  letter-spacing: 0.025em;
+  /* letter-spacing: 0.025em; */
   padding: 3vh 0 3vh 0;
   width: 70%;
   margin: 0 auto;
@@ -95,43 +100,54 @@ nav a:last-child{
 }
 
 .container {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .buttonBack {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background: transparent;
-    border-radius: 1vh;
-    color: white;
-  }
-  
-  .buttonNext {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background: transparent;
-    border-radius: 1vh;
-    color: white;
-  }
-  
-  
-  .dotGroup {
-    text-align: center;
-  }
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.caption{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1ex 2ex;
+  border-radius: 0.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buttonCarousel{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border-radius: 1vh;
+  color: white;
+  border: none;
+  width: 5%;
+}
+
+.buttonBack {
+  left: 0;
+}
+
+.buttonNext {
+  right: 0;
+}
+
+.buttonCarousel img {
+  width: 100%;
+}
+
+
+.dotGroup {
+  border: none;
+  text-align: center;
+}
 
 .dotGroup button{
     background-color: white;
-    border-radius: 0;
-}
-  
-.dotGroup {
-  text-align: center;
+    border-width: 1px;
 }
 
 .dotGroup button.carousel__dot--selected{
