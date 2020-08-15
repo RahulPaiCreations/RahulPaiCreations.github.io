@@ -28,10 +28,10 @@ export default function Fireship() {
               infinite
             >
               <div style={{position: "relative"}}>
-                <Slider style={{borderRadius:"3vh"}}>
+                <Slider style={{borderRadius:"3min"}}>
                   <Slide index={0}> 
                     <ImageWithZoom src="../../assets/1-fireship/1.png" />
-                    <div className="caption">Main</div>
+                    <div className="caption">Main Render</div>
                   </Slide>
                   <Slide index={1}>
                     <ImageWithZoom src="../../assets/1-fireship/2.png" />
@@ -43,7 +43,7 @@ export default function Fireship() {
                   </Slide>
                   <Slide index={3}>
                     <ImageWithZoom src="../../assets/1-fireship/4.png" />
-                    <div className="caption">Open</div>
+                    <div className="caption">Window Open</div>
                   </Slide>
                 </Slider>
                 <ButtonBack className="buttonBack buttonCarousel"><img src="../../assets/arrow_left.svg"/></ButtonBack>

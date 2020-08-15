@@ -20,25 +20,6 @@ const link = {
   touchActiveTapOnly: true,
 };
 
-const navItem = {
-  normal: {
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
-  },
-  hover: {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  },
-  active: 'hover',
-  touchActive: {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  },
-  focusFromTab: {
-    outline: '2px solid rgb(152, 152, 152)',
-    outlineOffset: '2px',
-    color: 'cyan',
-  },
-  touchActiveTapOnly: true,
-};
-
 const childLink = {};
 Object.keys(link).forEach((key) => {
   if (key !== 'touchActiveTapOnly') {
@@ -49,10 +30,6 @@ Object.keys(link).forEach((key) => {
 export default {
   link,
   childLink,
-  p: {
-    marginBottom: '3vh',
-    lineHeight: '1.4',
-  }
 };
 
 export const Code = ({ children }) => (

@@ -2,7 +2,6 @@ import React from 'react';
 import Interactive from 'react-interactive';
 import { Link, Switch, Route, NavLink, Redirect } from 'react-router-dom';
 import Home from './Home';
-import ExampleComponent from './ExampleComponent';
 import Blender from './Blender';
 import About from './About';
 import PageNotFound from './PageNotFound';
@@ -13,7 +12,7 @@ const s = Object.create(style);
 export default function App() {
   return (
     <div className="appRoot">
-      <Link to="/home"><img src="assets/rpc_logo.svg" className="logo"/></Link>
+      <Link to="/home"><img src="../../assets/rpc_logo.svg" className="logo"/></Link>
       
       <nav>
         <NavLink to="/home" activeClassName="activeNav" >Home</NavLink>
@@ -25,7 +24,6 @@ export default function App() {
         <Switch>
           <Route exact path="/" render={()=>(<Redirect to="/home" />)} />
           <Route exact path="/home" component={Home} />
-          <Route path="/example" component={ExampleComponent} />
           <Route path="/blender" component={Blender} />
           <Route path="/about" component={About} />
           <Route component={PageNotFound} />

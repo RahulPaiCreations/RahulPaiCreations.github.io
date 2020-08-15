@@ -17,7 +17,50 @@ export default function Blender() {
           exact path="/blender"
           render={() => (
             <div>
-              <div style={s.pageLinkContainer}>
+              <h1 className="title">Blender</h1>
+              <div className="blenderLink">
+                <Interactive
+                  as={Link}
+                  to="/blender/fireship"
+                ><img src="../../assets/1-fireship/1.png" /></Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive
+                  as={Link}
+                  to="/blender/fireship"
+                ><img src="../../assets/1-fireship/1.png" /></Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive
+                  as={Link}
+                  to="/blender/fireship"
+                ><img src="../../assets/1-fireship/1.png" /></Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive
+                  as={Link}
+                  to="/blender/fireship"
+                ><img src="../../assets/1-fireship/1.png" /></Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive
+                  as={Link}
+                  to="/blender/fireship"
+                ><img src="../../assets/1-fireship/1.png" /></Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive
+                  as={Link}
+                  to="/blender/fireship"
+                ><img src="../../assets/1-fireship/1.png" /></Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive
+                  as={Link}
+                  to="/blender/fireship"
+                ><img src="../../assets/1-fireship/1.png" /></Interactive>
+              </div>
+              <div className="blenderLink">
                 <Interactive
                   as={Link}
                   to="/blender/fireship"

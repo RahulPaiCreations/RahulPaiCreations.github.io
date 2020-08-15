@@ -19,15 +19,19 @@ html { background-color: rgb(0, 0, 0); }
     min-height: 100%;
     background-attachment: fixed;
 }
-
-/*required for IE/Edge to be compatible with left:50vw & transform:translate(-50%, 0),
-otherwise there is a phantom div on the right side of the screen (from the left:50vw),
-that the window will scroll to. Note the left:50vw and transform is used to center content
-horizaontally based on vw to prevent content jump when vertical scroll bar show/hide.*/
 body { overflow-x: hidden; }
 
 code{
   font-family: monospace;
+}
+
+p {
+  margin-bottom: 3vh;
+  line-height: 1.4;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 .appRoot{
@@ -35,7 +39,7 @@ code{
   font-weight: 300;
   font-size: 16px;
   /* letter-spacing: 0.025em; */
-  padding: 3vh 0 3vh 0;
+  padding: 3vmin 0 3vmin 0;
   width: 70%;
   margin: 0 auto;
   /* use responsive max-width to simulate padding/margin to allow
@@ -85,9 +89,9 @@ nav a:last-child{
 
 .appContent{
     background-color: rgba(255,255,255, 0.8);
-    border-radius: 1vh;
+    border-radius: 1vmin;
     border: 2px solid rgb(148, 148, 148);
-    padding: 3vh;
+    padding: 3vmin;
     color: black;
 }
 
@@ -96,7 +100,15 @@ nav a:last-child{
     font-style: bold;
     font-size: x-large;
     color: rgb(0, 142, 189);
-    margin-bottom: 1em;
+    margin-bottom: 1ex;
+}
+
+.link{
+  border-bottom: 2px dotted rgb(0, 168, 168);
+}
+
+.link:hover{
+  border-bottom: 2px solid rgb(0, 168, 168);
 }
 
 .container {
@@ -121,7 +133,7 @@ nav a:last-child{
   top: 50%;
   transform: translateY(-50%);
   background: transparent;
-  border-radius: 1vh;
+  border-radius: 1vmin;
   color: white;
   border: none;
   width: 5%;
@@ -152,4 +164,14 @@ nav a:last-child{
 
 .dotGroup button.carousel__dot--selected{
   background-color: black;
+}
+
+.blenderLink{
+  width: 25%;
+  display: inline-block;
+  padding-top: 1ex;
+}
+
+.blenderLink img{
+  width: 90%;
 }
