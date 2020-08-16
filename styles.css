@@ -105,10 +105,15 @@ nav a:last-child{
 
 .link{
   border-bottom: 2px dotted rgb(0, 168, 168);
+  transition: all 0.3s ease 0s;
 }
 
 .link:hover{
   border-bottom: 2px solid rgb(0, 168, 168);
+  transform: translateY(-7px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+  padding: 1ex;
 }
 
 .container {
@@ -121,7 +126,7 @@ nav a:last-child{
   position: absolute;
   top: 90%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   padding: 1ex 2ex;
   border-radius: 0.5em;
   color: white;
@@ -159,11 +164,13 @@ nav a:last-child{
 
 .dotGroup button{
     background-color: white;
-    border-width: 1px;
+    border-color: white;
+    border-width: 2px;
 }
 
 .dotGroup button.carousel__dot--selected{
   background-color: black;
+  border-color: black;
 }
 
 .blenderLink{
@@ -174,4 +181,10 @@ nav a:last-child{
 
 .blenderLink img{
   width: 90%;
+  transition: all 0.3s ease 0s;
+}
+
+.blenderLink img:hover{
+  transform: translateY(-7px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }

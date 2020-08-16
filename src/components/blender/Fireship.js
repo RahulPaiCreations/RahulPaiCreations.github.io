@@ -14,7 +14,7 @@ export default function Fireship() {
       <Route exact path="/blender/fireship" render={() => (
           <div>
             <h1 className="title">Fireship <code>"Pidom Fighter 314"</code></h1>
-            <p style={s.p}>
+            <p>
               This amazing space ship was inspired from star wars, but is very different in many ways.
               It has a long front glass window that opens upwards and two laser guns at the sides.
               This was my first ever project in Blender and so it is quite special to me, despite its simplicity.
@@ -24,11 +24,10 @@ export default function Fireship() {
               naturalSlideWidth={100}
               naturalSlideHeight={60}
               totalSlides={4}
-              hasMasterSpinner
               infinite
             >
               <div style={{position: "relative"}}>
-                <Slider style={{borderRadius:"3min"}}>
+                <Slider style={{borderRadius:"3vmin"}}>
                   <Slide index={0}> 
                     <ImageWithZoom src="../../assets/1-fireship/1.png" />
                     <div className="caption">Main Render</div>

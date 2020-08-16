@@ -18,10 +18,10 @@ export default function About() {
   return (
     <div>
       <h1 className="title">About</h1>
-      <p style={s.p}>
-        I used {interactiveLink('this template', "https://github.com/rafrex/spa-github-pages#readme")} for this single page app using GitHub Pages.
+      <p>
+        I used {interactiveLink('this template', "http://spa-github-pages.rafrex.com")} for this single page app using GitHub Pages. The source is {interactiveLink('here', "https://github.com/rafrex/spa-github-pages#readme")}.
       </p>
-      <p style={s.p}>
+      <p>
         The source for this website is available {interactiveLink('here', "https://github.com/RahulPaiCreations/rahulpaicreations.github.io")}.
       </p>
     </div>

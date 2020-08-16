@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div>
       <h1 className="title">Rahul Pai Creations</h1>
-      <p style={s.p}>
+      <p>
       Hi, I'm Rahul Pai. I am an Engineering student at the University of Cambridge.
       On this website I show various projects I have done in my own time.
       My career interests are in software development and Blender is a hobby of mine.
