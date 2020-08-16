@@ -2,6 +2,7 @@ import React from 'react';
 import Interactive from 'react-interactive';
 import { Switch, Route, Link } from 'react-router-dom';
 import PageNotFound from '../PageNotFound';
+import TitleDate from '../TitleDate'
 import style from '../../style';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ImageWithZoom, DotGroup } from 'pure-react-carousel';
 
@@ -13,10 +14,7 @@ export default function Fireship() {
     <Switch>
       <Route exact path="/blender/fireship" render={() => (
           <div>
-            <div className="titleDate">
-              <h1 className="title" style={{display:"inline"}}>Fireship <code>"Pidom Fighter 314"</code></h1>
-              <span className="date">Circa. 2011</span>
-            </div>
+            <TitleDate title="Fireship" alias="Pidom Fighter 314" date="Circa. 2011"/>
             <p>
               This amazing space ship was inspired from star wars, but is very different in many ways.
               It has a long front glass window that opens upwards and two laser guns at the sides.
