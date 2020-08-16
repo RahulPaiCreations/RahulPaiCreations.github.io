@@ -13,7 +13,10 @@ export default function Fireship() {
     <Switch>
       <Route exact path="/blender/fireship" render={() => (
           <div>
-            <h1 className="title">Fireship <code>"Pidom Fighter 314"</code></h1>
+            <div className="titleDate">
+              <h1 className="title" style={{display:"inline"}}>Fireship <code>"Pidom Fighter 314"</code></h1>
+              <span className="date">Circa. 2011</span>
+            </div>
             <p>
               This amazing space ship was inspired from star wars, but is very different in many ways.
               It has a long front glass window that opens upwards and two laser guns at the sides.

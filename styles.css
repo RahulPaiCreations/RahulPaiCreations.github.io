@@ -95,12 +95,25 @@ nav a:last-child{
     color: black;
 }
 
+.titleDate{
+  display:flex;
+  justify-content: space-between;
+  padding: 1em;
+  padding-bottom: 0em;
+}
+
 .title{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: bold;
     font-size: x-large;
     color: rgb(0, 142, 189);
     margin-bottom: 1ex;
+}
+
+.date{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: bold;
+  color: rgb(53, 53, 131);
 }
 
 .link{
