@@ -13,11 +13,11 @@ export default class TitleDate extends Component {
       <div className="titleDate">
         <h1 className="title" style={{ display: "inline" }}>
           {this.props.title}
-          {this.props.alias != null && this.props.alias.trim().length > 0 && (
-            <code> "{this.props.alias}"</code>
-          )}
         </h1>
-        <span className="date">{this.props.date}</span>
+        {this.props.alias != null && this.props.alias.trim().length > 0 && (
+          <div className="alias">"{this.props.alias}"</div>
+        )}
+        <div className="date">{this.props.date}</div>
       </div>
     );
   }

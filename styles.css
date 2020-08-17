@@ -66,6 +66,20 @@ p:last-child {
   text-size-adjust: none;
 }
 
+@media only screen and (max-width: 800px),
+  only screen and (max-device-width: 800px) {
+  .appRoot {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 520px),
+  only screen and (max-device-width: 480px) {
+  .appRoot {
+    width: 90%;
+  }
+}
+
 .logo {
   width: 200px;
   margin-bottom: -1ex;
@@ -80,14 +94,13 @@ p:last-child {
 nav {
   margin-top: 3ex;
   margin-bottom: 1em;
-  /* margin: 3vh 1em; */
   display: inline-block;
 }
 
 nav a {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 1ex 2ex;
-  border: 1px solid grey;
+  border: 1px solid darkslategray;
   color: white;
 }
 
@@ -121,16 +134,29 @@ nav a:last-child {
 
 .title {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: bold;
   font-size: x-large;
   color: rgb(0, 142, 189);
   margin-bottom: 1ex;
 }
 
+.alias {
+  font-family: monospace;
+  display: block;
+  text-align: center;
+}
+
 .date {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: bold;
+  display: block;
   color: rgb(53, 53, 131);
+  text-align: right;
+}
+
+@media only screen and (max-width: 520px),
+  only screen and (max-device-width: 480px) {
+  .titleDate {
+    display: unset;
+  }
 }
 
 .link {
@@ -206,6 +232,7 @@ nav a:last-child {
   width: 25%;
   display: inline-block;
   padding-top: 1ex;
+  text-align: center;
 }
 
 .blenderLink img {
@@ -216,4 +243,18 @@ nav a:last-child {
 .blenderLink img:hover {
   transform: translateY(-7px);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 800px),
+  only screen and (max-device-width: 800px) {
+  .blenderLink {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 520px),
+  only screen and (max-device-width: 480px) {
+  .blenderLink {
+    width: 100%;
+  }
 }
