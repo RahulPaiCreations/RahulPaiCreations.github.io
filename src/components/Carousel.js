@@ -37,31 +37,19 @@ export default class Carousel extends Component {
               ),
               this
             )}
-            {/* <Slide index={0}>
-              <ImageWithZoom src={this.props.folder + "/1.png"} />
-              <div className="caption">Main Render</div>
-            </Slide>
-            <Slide index={1}>
-              <ImageWithZoom src={this.props.folder + "/2.png"} />
-              <div className="caption">Front</div>
-            </Slide>
-            <Slide index={2}>
-              <ImageWithZoom src={this.props.folder + "/3.png"} />
-              <div className="caption">Back</div>
-            </Slide>
-            <Slide index={3}>
-              <ImageWithZoom src={this.props.folder + "/4.png"} />
-              <div className="caption">Window Open</div>
-            </Slide> */}
           </Slider>
-          <ButtonBack className="buttonBack buttonCarousel">
-            <img src="../../assets/arrow_left.svg" />
-          </ButtonBack>
-          <ButtonNext className="buttonNext buttonCarousel">
-            <img src="../../assets/arrow_right.svg" />
-          </ButtonNext>
+          {this.props.captions.length > 1 && (
+            <ButtonBack className="buttonBack buttonCarousel">
+              <img src="../../assets/arrow_left.svg" />
+            </ButtonBack>
+          )}
+          {this.props.captions.length > 1 && (
+            <ButtonNext className="buttonNext buttonCarousel">
+              <img src="../../assets/arrow_right.svg" />
+            </ButtonNext>
+          )}
         </div>
-        <DotGroup className="dotGroup" />
+        {this.props.captions.length > 1 && <DotGroup className="dotGroup" />}
       </CarouselProvider>
     );
   }
