@@ -17,7 +17,7 @@ export default function Fireship() {
               <TitleDate
                 title="Fireship"
                 alias="Pidom Fighter 314"
-                date="Circa. 2011"
+                date="11th Sep. 2011"
               />
               <p>
                 This amazing space ship was inspired from star wars, but is very

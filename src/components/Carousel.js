@@ -20,7 +20,7 @@ export default class Carousel extends Component {
     return (
       <CarouselProvider
         naturalSlideWidth={100}
-        naturalSlideHeight={60}
+        naturalSlideHeight={60} //TODO: adaptive aspect ratio
         totalSlides={this.props.captions.length}
         infinite
       >
