@@ -8,6 +8,7 @@ import Lamp from "./blender/Lamp";
 import Spaceship from "./blender/Spaceship";
 import RPC from "./blender/RPC";
 import Parker from "./blender/Parker";
+import Liquid from "./blender/Liquid";
 
 export default function Blender() {
   return (
@@ -19,6 +20,7 @@ export default function Blender() {
         <Route exact path="/blender/spaceship" component={Spaceship} />
         <Route exact path="/blender/rpc" component={RPC} />
         <Route exact path="/blender/parker" component={Parker} />
+        <Route exact path="/blender/liquid" component={Liquid} />
         <Route
           exact
           path="/blender"
@@ -54,6 +56,11 @@ export default function Blender() {
               <div className="blenderLink">
                 <Interactive as={Link} to="/blender/parker">
                   <img src="../../assets/6-parker/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/liquid">
+                  <img src="../../assets/7-liquid/1.png" />
                 </Interactive>
               </div>
             </div>
