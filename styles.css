@@ -120,9 +120,28 @@ nav a:last-child {
 .appContent {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1vmin;
-  border: 2px solid rgb(148, 148, 148);
+  border: 2px solid darkslategray;
   padding: 3vmin;
   color: black;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 1vmin;
+  border-top-right-radius: 1vmin;
+  margin: -3vmin;
+  margin-bottom: 3vmin;
+}
+
+.homeBanner {
+  background-image: url(assets/5-rpc/1.png);
+  height: 35vw;
+}
+
+.otherBanner {
+  background-image: url(assets/5-rpc/2.png);
+  height: 15vw;
 }
 
 .titleDate {

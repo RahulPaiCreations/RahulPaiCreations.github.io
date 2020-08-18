@@ -3,19 +3,9 @@ import Interactive from "react-interactive";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  const repoReadmeLink = (text) => (
-    <Interactive
-      as="a"
-      className="link"
-      href="https://github.com/rafrex/spa-github-pages#readme"
-    >
-      {text}
-    </Interactive>
-  );
-
   return (
     <div>
-      <h1 className="title">Rahul Pai Creations</h1>
+      <div className="homeBanner banner"></div>
       <p>
         Hi, I'm Rahul Pai. I am an Engineering student at the University of
         Cambridge. On this website I show various projects I have done in my own

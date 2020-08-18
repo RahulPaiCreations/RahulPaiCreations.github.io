@@ -24,6 +24,7 @@ export default function Blender() {
           path="/blender"
           render={() => (
             <div>
+              <div className="otherBanner banner"></div>
               <h1 className="title">Blender</h1>
               <div className="blenderLink">
                 <Interactive as={Link} to="/blender/fireship">
