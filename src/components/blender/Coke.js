@@ -20,7 +20,11 @@ export default function Coke() {
                 cylinder. This was my first endeavour with textures. This was
                 rendered in Blender Internal.
               </p>
-              <Carousel folder="../../assets/2-coke" captions={[""]} />
+              <Carousel
+                folder="../../assets/2-coke"
+                captions={[""]}
+                aspectRatio={[65, 57]}
+              />
             </div>
           )}
         />

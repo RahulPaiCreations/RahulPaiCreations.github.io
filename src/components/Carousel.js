@@ -14,15 +14,23 @@ export default class Carousel extends Component {
   static propTypes = {
     folder: PropTypes.string.isRequired,
     captions: PropTypes.arrayOf(PropTypes.string).isRequired,
+    aspectRatio: PropTypes.arrayOf(PropTypes.number),
+  };
+
+  static defaultProps = {
+    aspectRatio: [16, 9],
   };
 
   render() {
     return (
       <CarouselProvider
-        naturalSlideWidth={100}
-        naturalSlideHeight={60} //TODO: adaptive aspect ratio
+        naturalSlideWidth={this.props.aspectRatio[0]}
+        naturalSlideHeight={this.props.aspectRatio[1]} //TODO: adaptive aspect ratio
         totalSlides={this.props.captions.length}
-        infinite
+        infinite={this.props.captions.length > 1}
+        // isIntrinsicHeight
+        touchEnabled={this.props.captions.length > 1}
+        dragEnabled={this.props.captions.length > 1}
       >
         <div style={{ position: "relative" }}>
           <Slider style={{ borderRadius: "3vmin" }}>

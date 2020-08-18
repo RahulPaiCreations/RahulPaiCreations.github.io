@@ -41,7 +41,13 @@ export default function RPC() {
                 Then I modified it slightly and played with the font and added a
                 more dramatic camera angle to make this icon:
               </p>
-              <Carousel folder="../../assets/5-rpc/icon" captions={[""]} />
+              <div style={{ width: "50%", margin: "0 auto" }}>
+                <Carousel
+                  folder="../../assets/5-rpc/icon"
+                  captions={[""]}
+                  aspectRatio={[1, 1]}
+                />
+              </div>
             </div>
           )}
         />

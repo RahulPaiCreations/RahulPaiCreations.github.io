@@ -30,6 +30,7 @@ export default function Fireship() {
               <Carousel
                 folder="../../assets/1-fireship"
                 captions={["Main Render", "Front", "Back", "Window Open"]}
+                aspectRatio={[40, 24]}
               />
             </div>
           )}
