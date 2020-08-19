@@ -9,6 +9,12 @@ import Spaceship from "./blender/Spaceship";
 import RPC from "./blender/RPC";
 import Parker from "./blender/Parker";
 import Liquid from "./blender/Liquid";
+import KEGS10Y from "./blender/KEGS10Y";
+import Cityscape from "./blender/Cityscape";
+import Pokeballs from "./blender/Pokeballs";
+import Kitchen from "./blender/Kitchen";
+import Diglett from "./blender/Diglett";
+import FibreOptics from "./blender/FibreOptics";
 
 export default function Blender() {
   return (
@@ -21,6 +27,12 @@ export default function Blender() {
         <Route exact path="/blender/rpc" component={RPC} />
         <Route exact path="/blender/parker" component={Parker} />
         <Route exact path="/blender/liquid" component={Liquid} />
+        <Route exact path="/blender/kegs-10y" component={KEGS10Y} />
+        <Route exact path="/blender/cityscape" component={Cityscape} />
+        <Route exact path="/blender/pokeballs" component={Pokeballs} />
+        <Route exact path="/blender/kitchen" component={Kitchen} />
+        <Route exact path="/blender/diglett" component={Diglett} />
+        <Route exact path="/blender/fibre-optics" component={FibreOptics} />
         <Route
           exact
           path="/blender"
@@ -61,6 +73,36 @@ export default function Blender() {
               <div className="blenderLink">
                 <Interactive as={Link} to="/blender/liquid">
                   <img src="../../assets/7-liquid/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/kegs-10y">
+                  <img src="../../assets/8-kegs-10y/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/cityscape">
+                  <img src="../../assets/9-cityscape/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/pokeballs">
+                  <img src="../../assets/10-pokeballs/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/kitchen">
+                  <img src="../../assets/11-kitchen/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/diglett">
+                  <img src="../../assets/12-diglett/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/fibre-optics">
+                  <img src="../../assets/13-fibre-optics/1.png" />
                 </Interactive>
               </div>
             </div>

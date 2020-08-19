@@ -136,7 +136,7 @@ nav a:last-child {
 
 .homeBanner {
   background-image: url(assets/5-rpc/1.png);
-  height: 35vw;
+  height: 30vw;
 }
 
 .otherBanner {
@@ -282,4 +282,6 @@ nav a:last-child {
   border-radius: 3vmin;
   margin: 0 auto;
   display: block;
+  width: 64vw;
+  height: 36vw;
 }

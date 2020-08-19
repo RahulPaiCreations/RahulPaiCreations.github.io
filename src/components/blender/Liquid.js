@@ -21,8 +21,8 @@ export default function Coke() {
                 then made it into water, then rendered the animation backwards.
               </p>
               <iframe
-                width="560"
-                height="315"
+                width="800vw"
+                height="450vw"
                 src="https://www.youtube-nocookie.com/embed/RyNOj-Ei-YM"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
