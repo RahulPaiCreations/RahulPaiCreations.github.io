@@ -15,6 +15,11 @@ import Pokeballs from "./blender/Pokeballs";
 import Kitchen from "./blender/Kitchen";
 import Diglett from "./blender/Diglett";
 import FibreOptics from "./blender/FibreOptics";
+import Hexo from "./blender/Hexo";
+import RandomCubes from "./blender/RandomCubes";
+import Fireball from "./blender/Fireball";
+import Window from "./blender/Window";
+import Glasses from "./blender/Glasses";
 
 export default function Blender() {
   return (
@@ -33,6 +38,11 @@ export default function Blender() {
         <Route exact path="/blender/kitchen" component={Kitchen} />
         <Route exact path="/blender/diglett" component={Diglett} />
         <Route exact path="/blender/fibre-optics" component={FibreOptics} />
+        <Route exact path="/blender/hexo" component={Hexo} />
+        <Route exact path="/blender/random-cubes" component={RandomCubes} />
+        <Route exact path="/blender/fireball" component={Fireball} />
+        <Route exact path="/blender/window" component={Window} />
+        <Route exact path="/blender/glasses" component={Glasses} />
         <Route
           exact
           path="/blender"
@@ -103,6 +113,31 @@ export default function Blender() {
               <div className="blenderLink">
                 <Interactive as={Link} to="/blender/fibre-optics">
                   <img src="../../assets/13-fibre-optics/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/hexo">
+                  <img src="../../assets/14-hexo/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/random-cubes">
+                  <img src="../../assets/15-random-cubes/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/fireball">
+                  <img src="../../assets/16-fireball/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/window">
+                  <img src="../../assets/17-window/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/glasses">
+                  <img src="../../assets/18-glasses/1.png" />
                 </Interactive>
               </div>
             </div>

@@ -285,3 +285,10 @@ nav a:last-child {
   width: 64vw;
   height: 36vw;
 }
+
+.extraImage {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 3vmin;
+}

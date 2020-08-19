@@ -5,7 +5,7 @@ import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
 import Carousel from "../Carousel";
 
-export default function Coke() {
+export default function Liquid() {
   return (
     <div>
       <Switch>
