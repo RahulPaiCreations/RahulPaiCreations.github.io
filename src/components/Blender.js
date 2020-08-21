@@ -20,6 +20,12 @@ import RandomCubes from "./blender/RandomCubes";
 import Fireball from "./blender/Fireball";
 import Window from "./blender/Window";
 import Glasses from "./blender/Glasses";
+import Flower from "./blender/Flower";
+import Screen from "./blender/Screen";
+import RayBan from "./blender/RayBan";
+import Elucidator from "./blender/Elucidator";
+import Batman from "./blender/Batman";
+import Heart from "./blender/Heart";
 
 export default function Blender() {
   return (
@@ -43,6 +49,12 @@ export default function Blender() {
         <Route exact path="/blender/fireball" component={Fireball} />
         <Route exact path="/blender/window" component={Window} />
         <Route exact path="/blender/glasses" component={Glasses} />
+        <Route exact path="/blender/flower" component={Flower} />
+        <Route exact path="/blender/screen" component={Screen} />
+        <Route exact path="/blender/ray-ban" component={RayBan} />
+        <Route exact path="/blender/elucidator" component={Elucidator} />
+        <Route exact path="/blender/batman" component={Batman} />
+        <Route exact path="/blender/heart" component={Heart} />
         <Route
           exact
           path="/blender"
@@ -138,6 +150,36 @@ export default function Blender() {
               <div className="blenderLink">
                 <Interactive as={Link} to="/blender/glasses">
                   <img src="../../assets/18-glasses/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/flower">
+                  <img src="../../assets/19-flower/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/screen">
+                  <img src="../../assets/20-screen/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/ray-ban">
+                  <img src="../../assets/21-ray-ban/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/elucidator">
+                  <img src="../../assets/22-elucidator/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/batman">
+                  <img src="../../assets/23-batman/1.png" />
+                </Interactive>
+              </div>
+              <div className="blenderLink">
+                <Interactive as={Link} to="/blender/heart">
+                  <img src="../../assets/24-heart/1.png" />
                 </Interactive>
               </div>
             </div>
