@@ -28,6 +28,32 @@ import Batman from "./blender/Batman";
 import Heart from "./blender/Heart";
 
 export default function Blender() {
+  const links = [
+    "fireship",
+    "coke",
+    "lamp",
+    "spaceship",
+    "rpc",
+    "parker",
+    "liquid",
+    "kegs-10y",
+    "cityscape",
+    "pokeballs",
+    "kitchen",
+    "diglett",
+    "fibre-optics",
+    "hexo",
+    "random-cubes",
+    "fireball",
+    "window",
+    "glasses",
+    "flower",
+    "screen",
+    "ray-ban",
+    "elucidator",
+    "batman",
+    "heart",
+  ];
   return (
     <div>
       <Switch>
@@ -62,126 +88,18 @@ export default function Blender() {
             <div>
               <div className="otherBanner banner"></div>
               <h1 className="title">Blender</h1>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/fireship">
-                  <img src="../../assets/1-fireship/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/coke">
-                  <img src="../../assets/2-coke/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/lamp">
-                  <img src="../../assets/3-lamp/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/spaceship">
-                  <img src="../../assets/4-spaceship/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/rpc">
-                  <img src="../../assets/5-rpc/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/parker">
-                  <img src="../../assets/6-parker/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/liquid">
-                  <img src="../../assets/7-liquid/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/kegs-10y">
-                  <img src="../../assets/8-kegs-10y/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/cityscape">
-                  <img src="../../assets/9-cityscape/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/pokeballs">
-                  <img src="../../assets/10-pokeballs/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/kitchen">
-                  <img src="../../assets/11-kitchen/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/diglett">
-                  <img src="../../assets/12-diglett/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/fibre-optics">
-                  <img src="../../assets/13-fibre-optics/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/hexo">
-                  <img src="../../assets/14-hexo/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/random-cubes">
-                  <img src="../../assets/15-random-cubes/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/fireball">
-                  <img src="../../assets/16-fireball/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/window">
-                  <img src="../../assets/17-window/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/glasses">
-                  <img src="../../assets/18-glasses/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/flower">
-                  <img src="../../assets/19-flower/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/screen">
-                  <img src="../../assets/20-screen/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/ray-ban">
-                  <img src="../../assets/21-ray-ban/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/elucidator">
-                  <img src="../../assets/22-elucidator/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/batman">
-                  <img src="../../assets/23-batman/thumbnail.jpg" />
-                </Interactive>
-              </div>
-              <div className="blenderLink">
-                <Interactive as={Link} to="/blender/heart">
-                  <img src="../../assets/24-heart/thumbnail.jpg" />
-                </Interactive>
-              </div>
+              {links.map(
+                (link, ind) => (
+                  <div className="blenderLink">
+                    <Interactive as={Link} to={`/blender/${link}`}>
+                      <img
+                        src={`../../assets/${ind + 1}-${link}/thumbnail.jpg`}
+                      />
+                    </Interactive>
+                  </div>
+                ),
+                this
+              )}
             </div>
           )}
         />
