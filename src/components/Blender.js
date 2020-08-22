@@ -89,11 +89,11 @@ export default function Blender() {
               <div className="otherBanner banner"></div>
               <h1 className="title">Blender</h1>
               {links.map(
-                (link, ind) => (
+                (name, index) => (
                   <div className="blenderLink">
-                    <Interactive as={Link} to={`/blender/${link}`}>
+                    <Interactive as={Link} to={`/blender/${name}`}>
                       <img
-                        src={`../../assets/${ind + 1}-${link}/thumbnail.jpg`}
+                        src={`../../assets/${index + 1}-${name}/thumbnail.jpg`}
                       />
                     </Interactive>
                   </div>
