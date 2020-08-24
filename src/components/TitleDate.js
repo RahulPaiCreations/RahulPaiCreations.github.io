@@ -11,7 +11,7 @@ export default class TitleDate extends Component {
   render() {
     return (
       <div className="titleDate">
-        <h1 className="title" style={{ display: "inline" }}>
+        <h1 className="title titleLarge" style={{ display: "inline" }}>
           {this.props.title}
         </h1>
         {this.props.alias != null && this.props.alias.trim().length > 0 && (

@@ -153,9 +153,12 @@ nav a:last-child {
 
 .title {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: x-large;
   color: rgb(0, 142, 189);
   margin-bottom: 1ex;
+}
+
+.titleLarge {
+  font-size: x-large;
 }
 
 .alias {
