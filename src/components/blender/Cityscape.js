@@ -22,7 +22,7 @@ export default function Cityscape() {
                 using a particle system. Some are on the wrong land faces, so I
                 said it was after an earthquake 😅.
               </p>
-              <Carousel folder="../../assets/9-cityscape" captions={[""]} />
+              <Carousel folder="../../assets/cityscape" captions={[""]} />
             </div>
           )}
         />

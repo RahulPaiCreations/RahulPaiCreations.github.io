@@ -24,7 +24,7 @@ export default function RandomCubes() {
                 should have been more red cubes.
               </p>
               <Carousel
-                folder="../../assets/15-random-cubes"
+                folder="../../assets/random-cubes"
                 captions={[""]}
                 aspectRatio={[18, 16]}
               />

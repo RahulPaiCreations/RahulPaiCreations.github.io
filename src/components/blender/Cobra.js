@@ -22,7 +22,7 @@ export default function Cobra() {
                 way. It took about 6 months; it's my biggest project.
               </p>
               <Carousel
-                folder="../../assets/29-cobra"
+                folder="../../assets/cobra"
                 captions={[
                   "Main Render",
                   "Front",
@@ -33,7 +33,7 @@ export default function Cobra() {
               />
               <p style={{ marginTop: "1em" }}>Some extras:</p>
               <Carousel
-                folder="../../assets/29-cobra/extras"
+                folder="../../assets/cobra/extras"
                 captions={[
                   "Mike Pan style early render",
                   "Herbie outfit, with the leather cover I had before the internals",

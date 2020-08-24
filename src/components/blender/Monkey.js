@@ -30,7 +30,7 @@ export default function Monkey() {
                 .
               </p>
               <Carousel
-                folder="../../assets/26-monkey"
+                folder="../../assets/monkey"
                 captions={[""]}
                 aspectRatio={[9, 16]}
               />

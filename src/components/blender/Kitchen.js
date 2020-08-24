@@ -16,7 +16,7 @@ export default function Kitchen() {
             <div>
               <TitleDate title="Kitchen" date="11th Jan. 2014" />
               <p>An unfinished attempt at a kitchen.</p>
-              <Carousel folder="../../assets/11-kitchen" captions={[""]} />
+              <Carousel folder="../../assets/kitchen" captions={[""]} />
             </div>
           )}
         />

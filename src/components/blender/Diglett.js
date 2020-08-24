@@ -33,7 +33,7 @@ export default function Diglett() {
                 originally just sandstone. I also played with the displacement
                 to make it not too sharp and not too smooth. Hope you like it!
               </p>
-              <Carousel folder="../../assets/12-diglett" captions={[""]} />
+              <Carousel folder="../../assets/diglett" captions={[""]} />
             </div>
           )}
         />

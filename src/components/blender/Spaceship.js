@@ -33,7 +33,7 @@ export default function Spaceship() {
                 the Color Ramp node which I really like to use to add more
                 control. Probably my first Cycles Render.
               </p>
-              <Carousel folder="../../assets/4-spaceship" captions={[""]} />
+              <Carousel folder="../../assets/spaceship" captions={[""]} />
             </div>
           )}
         />

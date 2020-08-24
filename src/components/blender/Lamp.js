@@ -20,7 +20,7 @@ export default function Lamp() {
                 neck. You can't see easily in the render, but I wrote ON and OFF
                 on the two sides of the switch.
               </p>
-              <Carousel folder="../../assets/3-lamp" captions={[""]} />
+              <Carousel folder="../../assets/lamp" captions={[""]} />
             </div>
           )}
         />

@@ -27,7 +27,7 @@ export default function FibreOptics() {
                 compositor.
               </p>
               <Carousel
-                folder="../../assets/13-fibre-optics"
+                folder="../../assets/fibre-optics"
                 captions={["", "", "", "", "", "", "", "", "", ""]}
               />
             </div>

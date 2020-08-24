@@ -22,7 +22,7 @@ export default function Batman() {
                 which I was quite proud of.
               </p>
               <Carousel
-                folder="../../assets/23-batman"
+                folder="../../assets/batman"
                 captions={[
                   "Main Render",
                   "Mouth",

@@ -28,7 +28,7 @@ export default function HeartRiver() {
                 skyscrapers with Japansese neon writing as you'd expect in
                 Tokyo. Not my most realistic render...
               </p>
-              <Carousel folder="../../assets/25-heart-river" captions={[""]} />
+              <Carousel folder="../../assets/heart-river" captions={[""]} />
             </div>
           )}
         />

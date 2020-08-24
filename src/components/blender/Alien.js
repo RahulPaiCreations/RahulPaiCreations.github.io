@@ -24,7 +24,7 @@ export default function Alien() {
                 .
               </p>
               <Carousel
-                folder="../../assets/27-alien"
+                folder="../../assets/alien"
                 captions={["Final Render", "Model before materials and pose"]}
               />
             </div>

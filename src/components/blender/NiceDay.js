@@ -26,10 +26,7 @@ export default function NiceDay() {
                 </a>
                 . I think I also made the red part leather.
               </p>
-              <Carousel
-                folder="../../assets/32-have-a-nice-day"
-                captions={[""]}
-              />
+              <Carousel folder="../../assets/have-a-nice-day" captions={[""]} />
             </div>
           )}
         />

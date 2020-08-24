@@ -20,7 +20,7 @@ export default function Bubble() {
                 result.
               </p>
               <Carousel
-                folder="../../assets/31-bubble"
+                folder="../../assets/bubble"
                 captions={["Render", "Material Nodes"]}
               />
             </div>

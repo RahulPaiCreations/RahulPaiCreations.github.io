@@ -21,7 +21,7 @@ export default function Coke() {
                 rendered in Blender Internal.
               </p>
               <Carousel
-                folder="../../assets/2-coke"
+                folder="../../assets/coke"
                 captions={[""]}
                 aspectRatio={[65, 57]}
               />

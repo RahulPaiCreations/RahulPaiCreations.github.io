@@ -26,7 +26,7 @@ export default function Parker() {
                 had hoped to add some details such as the logo engraving and
                 maybe even rig it with the cartridge inside.
               </p>
-              <Carousel folder="../../assets/6-parker" captions={[""]} />
+              <Carousel folder="../../assets/parker" captions={[""]} />
             </div>
           )}
         />

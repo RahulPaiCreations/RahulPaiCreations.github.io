@@ -30,7 +30,7 @@ export default function Heart() {
                 background is using a radial Voronoi texture.
               </p>
               <Carousel
-                folder="../../assets/24-heart"
+                folder="../../assets/heart"
                 captions={[""]}
                 aspectRatio={[1, 1]}
               />

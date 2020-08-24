@@ -21,7 +21,7 @@ export default function Blerb() {
                 word: "blerb".
               </p>
               <Carousel
-                folder="../../assets/28-blerb"
+                folder="../../assets/blerb"
                 captions={["", "", "", "", "", "", ""]}
               />
             </div>

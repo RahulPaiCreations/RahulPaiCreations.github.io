@@ -28,7 +28,7 @@ export default function Fireship() {
                 because I didn't know about the compositor at the time.
               </p>
               <Carousel
-                folder="../../assets/1-fireship"
+                folder="../../assets/fireship"
                 captions={["Main Render", "Front", "Back", "Window Open"]}
                 aspectRatio={[40, 24]}
               />

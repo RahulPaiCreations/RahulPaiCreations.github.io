@@ -73,7 +73,7 @@ export default function Blender() {
   return (
     <div>
       <Switch>
-        {Opject.keys(blenderProjects).map(
+        {Object.keys(blenderProjects).map(
           (name, index) => (
             <Route
               exact
@@ -90,13 +90,11 @@ export default function Blender() {
             <div>
               <div className="otherBanner banner"></div>
               <h1 className="title">Blender</h1>
-              {Opject.keys(blenderProjects).map(
+              {Object.keys(blenderProjects).map(
                 (name, index) => (
                   <div className="blenderLink">
                     <Interactive as={Link} to={`/blender/${name}`}>
-                      <img
-                        src={`../../assets/${index + 1}-${name}/thumbnail.jpg`}
-                      />
+                      <img src={`../../assets/${name}/thumbnail.jpg`} />
                     </Interactive>
                   </div>
                 ),

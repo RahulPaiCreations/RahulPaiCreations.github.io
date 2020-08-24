@@ -21,7 +21,7 @@ export default function Elucidator() {
                 render as a cover photo. This is my first weapon model.
               </p>
               <Carousel
-                folder="../../assets/22-elucidator"
+                folder="../../assets/elucidator"
                 captions={["Final Render", "Final Model"]}
               />
             </div>

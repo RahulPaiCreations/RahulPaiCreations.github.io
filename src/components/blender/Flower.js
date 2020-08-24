@@ -19,7 +19,7 @@ export default function Flower() {
                 An unfinished attempt at a flower. The petals are done with a
                 procedural texture, based on a noise texture.
               </p>
-              <Carousel folder="../../assets/19-flower" captions={[""]} />
+              <Carousel folder="../../assets/flower" captions={[""]} />
             </div>
           )}
         />

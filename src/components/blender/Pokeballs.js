@@ -24,7 +24,7 @@ export default function Pokeballs() {
                 Balls.
               </p>
               <Carousel
-                folder="../../assets/10-pokeballs"
+                folder="../../assets/pokeballs"
                 captions={[
                   "Pokéball",
                   "Ultra Ball",

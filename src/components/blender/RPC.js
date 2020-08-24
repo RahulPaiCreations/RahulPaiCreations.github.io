@@ -30,7 +30,7 @@ export default function RPC() {
                 Bump maps and material nodes in general.
               </p>
               <Carousel
-                folder="../../assets/5-rpc"
+                folder="../../assets/rpc"
                 captions={[
                   "Final Render",
                   "Alternate Textures",
@@ -43,7 +43,7 @@ export default function RPC() {
               </p>
               <div style={{ width: "50%", margin: "0 auto" }}>
                 <Carousel
-                  folder="../../assets/5-rpc/icon"
+                  folder="../../assets/rpc/icon"
                   captions={[""]}
                   aspectRatio={[1, 1]}
                 />

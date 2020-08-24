@@ -135,12 +135,12 @@ nav a:last-child {
 }
 
 .homeBanner {
-  background-image: url(assets/5-rpc/1.png);
+  background-image: url(assets/rpc/1.png);
   height: 30vw;
 }
 
 .otherBanner {
-  background-image: url(assets/5-rpc/2.png);
+  background-image: url(assets/rpc/2.png);
   height: 15vw;
 }
 

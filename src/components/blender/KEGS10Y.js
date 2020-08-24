@@ -21,7 +21,7 @@ export default function KEGS10Y() {
                 blur like effect using Color Ramp.
               </p>
               <Carousel
-                folder="../../assets/8-kegs-10y"
+                folder="../../assets/kegs-10y"
                 captions={["Final Version (V5)", "V1", "V2", "V3", "V4", "V6"]}
               />
             </div>

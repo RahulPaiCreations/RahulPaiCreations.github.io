@@ -25,7 +25,7 @@ export default function Hexo() {
                 is my favourite colour.
               </p>
               <Carousel
-                folder="../../assets/14-hexo"
+                folder="../../assets/hexo"
                 captions={[""]}
                 aspectRatio={[18, 16]}
               />

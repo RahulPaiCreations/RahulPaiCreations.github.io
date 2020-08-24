@@ -20,7 +20,7 @@ export default function RayBan() {
                 the logo texture. For some reason I made a kind of pedestal to
                 put it on.
               </p>
-              <Carousel folder="../../assets/21-ray-ban" captions={["", ""]} />
+              <Carousel folder="../../assets/ray-ban" captions={["", ""]} />
             </div>
           )}
         />
