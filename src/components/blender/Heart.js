@@ -14,7 +14,7 @@ export default function Heart() {
           path="/blender/heart"
           render={() => (
             <div>
-              <TitleDate title="Heart" date="18th Juns 2015" />
+              <TitleDate title="Heart" date="18th Jun. 2015" />
               <p>
                 Another{" "}
                 <Interactive as={Link} to="/blender/fireship" className="link">

@@ -26,61 +26,63 @@ import RayBan from "./blender/RayBan";
 import Elucidator from "./blender/Elucidator";
 import Batman from "./blender/Batman";
 import Heart from "./blender/Heart";
+import HeartRiver from "./blender/HeartRiver";
+import Monkey from "./blender/Monkey";
+import Alien from "./blender/Alien";
+import Blerb from "./blender/Blerb";
+import Cobra from "./blender/Cobra";
+import HeartFracture from "./blender/HeartFracture";
+import Bubble from "./blender/Bubble";
+import NiceDay from "./blender/NiceDay";
 
 export default function Blender() {
-  const links = [
-    "fireship",
-    "coke",
-    "lamp",
-    "spaceship",
-    "rpc",
-    "parker",
-    "liquid",
-    "kegs-10y",
-    "cityscape",
-    "pokeballs",
-    "kitchen",
-    "diglett",
-    "fibre-optics",
-    "hexo",
-    "random-cubes",
-    "fireball",
-    "window",
-    "glasses",
-    "flower",
-    "screen",
-    "ray-ban",
-    "elucidator",
-    "batman",
-    "heart",
-  ];
+  const blenderProjects = {
+    fireship: Fireship,
+    coke: Coke,
+    lamp: Lamp,
+    spaceship: Spaceship,
+    rpc: RPC,
+    parker: Parker,
+    liquid: Liquid,
+    "kegs-10y": KEGS10Y,
+    cityscape: Cityscape,
+    pokeballs: Pokeballs,
+    kitchen: Kitchen,
+    diglett: Diglett,
+    "fibre-optics": FibreOptics,
+    hexo: Hexo,
+    "random-cubes": RandomCubes,
+    fireball: Fireball,
+    window: Window,
+    glasses: Glasses,
+    flower: Flower,
+    screen: Screen,
+    "ray-ban": RayBan,
+    elucidator: Elucidator,
+    batman: Batman,
+    heart: Heart,
+    "heart-river": HeartRiver,
+    monkey: Monkey,
+    alien: Alien,
+    blerb: Blerb,
+    cobra: Cobra,
+    "heart-fracture": HeartFracture,
+    bubble: Bubble,
+    "have-a-nice-day": NiceDay,
+  };
   return (
     <div>
       <Switch>
-        <Route exact path="/blender/fireship" component={Fireship} />
-        <Route exact path="/blender/coke" component={Coke} />
-        <Route exact path="/blender/lamp" component={Lamp} />
-        <Route exact path="/blender/spaceship" component={Spaceship} />
-        <Route exact path="/blender/rpc" component={RPC} />
-        <Route exact path="/blender/parker" component={Parker} />
-        <Route exact path="/blender/liquid" component={Liquid} />
-        <Route exact path="/blender/kegs-10y" component={KEGS10Y} />
-        <Route exact path="/blender/cityscape" component={Cityscape} />
-        <Route exact path="/blender/pokeballs" component={Pokeballs} />
-        <Route exact path="/blender/kitchen" component={Kitchen} />
-        <Route exact path="/blender/diglett" component={Diglett} />
-        <Route exact path="/blender/fibre-optics" component={FibreOptics} />
-        <Route exact path="/blender/hexo" component={Hexo} />
-        <Route exact path="/blender/random-cubes" component={RandomCubes} />
-        <Route exact path="/blender/fireball" component={Fireball} />
-        <Route exact path="/blender/window" component={Window} />
-        <Route exact path="/blender/glasses" component={Glasses} />
-        <Route exact path="/blender/flower" component={Flower} />
-        <Route exact path="/blender/screen" component={Screen} />
-        <Route exact path="/blender/ray-ban" component={RayBan} />
-        <Route exact path="/blender/elucidator" component={Elucidator} />
-        <Route exact path="/blender/batman" component={Batman} />
-        <Route exact path="/blender/heart" component={Heart} />
+        {Opject.keys(blenderProjects).map(
+          (name, index) => (
+            <Route
+              exact
+              path={`/blender/${name}`}
+              component={blenderProjects[name]}
+            />
+          ),
+          this
+        )}
         <Route
           exact
           path="/blender"
@@ -88,7 +90,7 @@ export default function Blender() {
             <div>
               <div className="otherBanner banner"></div>
               <h1 className="title">Blender</h1>
-              {links.map(
+              {Opject.keys(blenderProjects).map(
                 (name, index) => (
                   <div className="blenderLink">
                     <Interactive as={Link} to={`/blender/${name}`}>
