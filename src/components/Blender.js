@@ -34,6 +34,24 @@ import Cobra from "./blender/Cobra";
 import HeartFracture from "./blender/HeartFracture";
 import Bubble from "./blender/Bubble";
 import NiceDay from "./blender/NiceDay";
+import BadMedicine from "./blender/BadMedicine";
+import RPCAnim from "./blender/RPCAnim";
+import Wavey from "./blender/Wavey";
+import Room from "./blender/Room";
+
+//later
+import RPAnim from "./blender/RPAnim";
+import VolumeCube from "./blender/VolumeCube";
+import Octagons from "./blender/Octagons";
+import LegoWater from "./blender/LegoWater";
+import RobotSculpt from "./blender/RobotSculpt";
+import Gun from "./blender/Gun";
+import Torso from "./blender/Torso";
+import CharlieBrown from "./blender/CharlieBrown";
+import SteelHorse from "./blender/SteelHorse";
+import RedSaturation from "./blender/RedSaturation";
+import ProductDesign from "./blender/ProductDesign";
+import BlueReact from "./blender/BlueReact";
 
 export default function Blender() {
   const blenderProjects = {
@@ -50,6 +68,7 @@ export default function Blender() {
     kitchen: Kitchen,
     diglett: Diglett,
     "fibre-optics": FibreOptics,
+    "rpc-anim": RPCAnim,
     hexo: Hexo,
     "random-cubes": RandomCubes,
     fireball: Fireball,
@@ -66,9 +85,24 @@ export default function Blender() {
     alien: Alien,
     blerb: Blerb,
     cobra: Cobra,
+    "steel-horse": SteelHorse,
     "heart-fracture": HeartFracture,
     bubble: Bubble,
     "have-a-nice-day": NiceDay,
+    "bad-medicine": BadMedicine,
+    wavey: Wavey,
+    room: Room,
+    "volume-cube": VolumeCube,
+    octagons: Octagons,
+    "lego-water": LegoWater,
+    "robot-sculpt": RobotSculpt,
+    gun: Gun,
+    torso: Torso,
+    "charlie-brown": CharlieBrown,
+    "red-saturation": RedSaturation,
+    "rp-anim": RPAnim,
+    "product-design": ProductDesign,
+    "blue-react": BlueReact,
   };
   return (
     <div>
@@ -97,7 +131,7 @@ export default function Blender() {
                       <img src={`../../assets/${name}/thumbnail.jpg`} />
                       <div className="title">
                         <em>
-                          {index + 1}. {name.toUpperCase()}
+                          {index + 1}. {name.toUpperCase().replace("-", " ")}
                         </em>
                       </div>
                     </Interactive>

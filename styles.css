@@ -135,13 +135,13 @@ nav a:last-child {
 }
 
 .homeBanner {
-  background-image: url(assets/rpc/1.png);
+  background-image: url(assets/rpc-anim/1.png);
   height: 30vw;
 }
 
 .otherBanner {
-  background-image: url(assets/rpc/2.png);
-  height: 15vw;
+  background-image: url(assets/steel-horse/4.png);
+  height: 10vw;
 }
 
 .titleDate {
