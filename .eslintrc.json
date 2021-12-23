@@ -26,6 +26,10 @@
     "react/jsx-filename-extension": "off",
     "react/no-array-index-key": "off",
     "linebreak-style": 0,
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
     "quotes": [
       "error",
       "double"

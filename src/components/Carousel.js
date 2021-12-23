@@ -48,12 +48,12 @@ export default class Carousel extends Component {
           </Slider>
           {this.props.captions.length > 1 && (
             <ButtonBack className="buttonBack buttonCarousel">
-              <img src="../../assets/arrow_left.svg" />
+              <img src="../../assets/arrow_left.svg" alt="left" />
             </ButtonBack>
           )}
           {this.props.captions.length > 1 && (
             <ButtonNext className="buttonNext buttonCarousel">
-              <img src="../../assets/arrow_right.svg" />
+              <img src="../../assets/arrow_right.svg" alt="right" />
             </ButtonNext>
           )}
         </div>

@@ -127,7 +127,10 @@ export default function BlenderOld() {
                 (name, index) => (
                   <div className="blenderLink">
                     <Interactive as={Link} to={`/blender/${name}`}>
-                      <img src={`../../assets/${name}/thumbnail.jpg`} />
+                      <img
+                        src={`../../assets/${name}/thumbnail.jpg`}
+                        alt="thumbnail"
+                      />
                       <div className="title">
                         <em>
                           {index + 1}. {name.toUpperCase().replace("-", " ")}
