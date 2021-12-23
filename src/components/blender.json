@@ -1,0 +1,149 @@
+﻿{
+    "$schema": "blenderSchema.json",
+    "projects": [
+        {
+            "name": "fireship"
+        },
+        {
+            "name": "coke"
+        },
+        {
+            "name": "lamp"
+        },
+        {
+            "name": "spaceship"
+        },
+        {
+            "name": "rpc"
+        },
+        {
+            "name": "parker"
+        },
+        {
+            "name": "liquid"
+        },
+        {
+            "name": "kegs-10y"
+        },
+        {
+            "name": "cityscape"
+        },
+        {
+            "name": "pokeballs"
+        },
+        {
+            "name": "kitchen"
+        },
+        {
+            "name": "diglett"
+        },
+        {
+            "name": "fibre-optics"
+        },
+        {
+            "name": "rpc-anim"
+        },
+        {
+            "name": "hexo"
+        },
+        {
+            "name": "random-cubes"
+        },
+        {
+            "name": "fireball"
+        },
+        {
+            "name": "window"
+        },
+        {
+            "name": "glasses"
+        },
+        {
+            "name": "flower"
+        },
+        {
+            "name": "screen"
+        },
+        {
+            "name": "ray-ban"
+        },
+        {
+            "name": "elucidator"
+        },
+        {
+            "name": "batman"
+        },
+        {
+            "name": "heart"
+        },
+        {
+            "name": "heart-river"
+        },
+        {
+            "name": "monkey"
+        },
+        {
+            "name": "alien"
+        },
+        {
+            "name": "blerb"
+        },
+        {
+            "name": "cobra"
+        },
+        {
+            "name": "steel-horse"
+        },
+        {
+            "name": "heart-fracture"
+        },
+        {
+            "name": "bubble"
+        },
+        {
+            "name": "have-a-nice-day"
+        },
+        {
+            "name": "bad-medicine"
+        },
+        {
+            "name": "wavey"
+        },
+        {
+            "name": "room"
+        },
+        {
+            "name": "volume-cube"
+        },
+        {
+            "name": "octagons"
+        },
+        {
+            "name": "lego-water"
+        },
+        {
+            "name": "robot-sculpt"
+        },
+        {
+            "name": "gun"
+        },
+        {
+            "name": "torso"
+        },
+        {
+            "name": "charlie-brown"
+        },
+        {
+            "name": "red-saturation"
+        },
+        {
+            "name": "rp-anim"
+        },
+        {
+            "name": "product-design"
+        },
+        {
+            "name": "blue-react"
+        }
+    ]
+}

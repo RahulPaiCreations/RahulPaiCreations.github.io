@@ -1,6 +1,7 @@
 import React from "react";
 import Interactive from "react-interactive";
 import { Link, Route, Switch } from "react-router-dom";
+import blender from "./blender.json";
 import Alien from "./blender/Alien";
 import BadMedicine from "./blender/BadMedicine";
 import Batman from "./blender/Batman";
@@ -123,17 +124,18 @@ export default function Blender() {
             <div>
               <div className="otherBanner banner" />
               <h1 className="title titleLarge">Blender</h1>
-              {Object.keys(blenderProjects).map(
-                (name, index) => (
+              {blender.projects.map(
+                (project, index) => (
                   <div className="blenderLink">
-                    <Interactive as={Link} to={`/blender/${name}`}>
+                    <Interactive as={Link} to={`/blender/${project.name}`}>
                       <img
-                        src={`../../assets/${name}/thumbnail.jpg`}
+                        src={`../../assets/${project.name}/thumbnail.jpg`}
                         alt="thumbnail"
                       />
                       <div className="title">
                         <em>
-                          {index + 1}. {name.toUpperCase().replace("-", " ")}
+                          {index + 1}.{" "}
+                          {project.name.toUpperCase().replace("-", " ")}
                         </em>
                       </div>
                     </Interactive>
