@@ -1,57 +1,56 @@
 import React from "react";
 import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
-import PageNotFound from "./PageNotFound";
-import Fireship from "./blender/Fireship";
-import Coke from "./blender/Coke";
-import Lamp from "./blender/Lamp";
-import Spaceship from "./blender/Spaceship";
-import RPC from "./blender/RPC";
-import Parker from "./blender/Parker";
-import Liquid from "./blender/Liquid";
-import KEGS10Y from "./blender/KEGS10Y";
-import Cityscape from "./blender/Cityscape";
-import Pokeballs from "./blender/Pokeballs";
-import Kitchen from "./blender/Kitchen";
-import Diglett from "./blender/Diglett";
-import FibreOptics from "./blender/FibreOptics";
-import Hexo from "./blender/Hexo";
-import RandomCubes from "./blender/RandomCubes";
-import Fireball from "./blender/Fireball";
-import Window from "./blender/Window";
-import Glasses from "./blender/Glasses";
-import Flower from "./blender/Flower";
-import Screen from "./blender/Screen";
-import RayBan from "./blender/RayBan";
-import Elucidator from "./blender/Elucidator";
-import Batman from "./blender/Batman";
-import Heart from "./blender/Heart";
-import HeartRiver from "./blender/HeartRiver";
-import Monkey from "./blender/Monkey";
+import { Link, Route, Switch } from "react-router-dom";
 import Alien from "./blender/Alien";
-import Blerb from "./blender/Blerb";
-import Cobra from "./blender/Cobra";
-import HeartFracture from "./blender/HeartFracture";
-import Bubble from "./blender/Bubble";
-import NiceDay from "./blender/NiceDay";
 import BadMedicine from "./blender/BadMedicine";
-import RPCAnim from "./blender/RPCAnim";
-import Wavey from "./blender/Wavey";
-import Room from "./blender/Room";
-
-//later
-import RPAnim from "./blender/RPAnim";
-import VolumeCube from "./blender/VolumeCube";
-import Octagons from "./blender/Octagons";
-import LegoWater from "./blender/LegoWater";
-import RobotSculpt from "./blender/RobotSculpt";
-import Gun from "./blender/Gun";
-import Torso from "./blender/Torso";
-import CharlieBrown from "./blender/CharlieBrown";
-import SteelHorse from "./blender/SteelHorse";
-import RedSaturation from "./blender/RedSaturation";
-import ProductDesign from "./blender/ProductDesign";
+import Batman from "./blender/Batman";
+import Blerb from "./blender/Blerb";
 import BlueReact from "./blender/BlueReact";
+import Bubble from "./blender/Bubble";
+import CharlieBrown from "./blender/CharlieBrown";
+import Cityscape from "./blender/Cityscape";
+import Cobra from "./blender/Cobra";
+import Coke from "./blender/Coke";
+import Diglett from "./blender/Diglett";
+import Elucidator from "./blender/Elucidator";
+import FibreOptics from "./blender/FibreOptics";
+import Fireball from "./blender/Fireball";
+import Fireship from "./blender/Fireship";
+import Flower from "./blender/Flower";
+import Glasses from "./blender/Glasses";
+import Gun from "./blender/Gun";
+import Heart from "./blender/Heart";
+import HeartFracture from "./blender/HeartFracture";
+import HeartRiver from "./blender/HeartRiver";
+import Hexo from "./blender/Hexo";
+import KEGS10Y from "./blender/KEGS10Y";
+import Kitchen from "./blender/Kitchen";
+import Lamp from "./blender/Lamp";
+import LegoWater from "./blender/LegoWater";
+import Liquid from "./blender/Liquid";
+import Monkey from "./blender/Monkey";
+import NiceDay from "./blender/NiceDay";
+import Octagons from "./blender/Octagons";
+import Parker from "./blender/Parker";
+import Pokeballs from "./blender/Pokeballs";
+import ProductDesign from "./blender/ProductDesign";
+import RandomCubes from "./blender/RandomCubes";
+import RayBan from "./blender/RayBan";
+import RedSaturation from "./blender/RedSaturation";
+import RobotSculpt from "./blender/RobotSculpt";
+import Room from "./blender/Room";
+// later
+import RPAnim from "./blender/RPAnim";
+import RPC from "./blender/RPC";
+import RPCAnim from "./blender/RPCAnim";
+import Screen from "./blender/Screen";
+import Spaceship from "./blender/Spaceship";
+import SteelHorse from "./blender/SteelHorse";
+import Torso from "./blender/Torso";
+import VolumeCube from "./blender/VolumeCube";
+import Wavey from "./blender/Wavey";
+import Window from "./blender/Window";
+import PageNotFound from "./PageNotFound";
 
 export default function Blender() {
   const blenderProjects = {
@@ -108,21 +107,21 @@ export default function Blender() {
     <div>
       <Switch>
         {Object.keys(blenderProjects).map(
-          (name) => (
+          name => (
             <Route
               exact
               path={`/blender/${name}`}
               component={blenderProjects[name]}
             />
           ),
-          this
+          this,
         )}
         <Route
           exact
           path="/blender"
           render={() => (
             <div>
-              <div className="otherBanner banner"></div>
+              <div className="otherBanner banner" />
               <h1 className="title titleLarge">Blender</h1>
               {Object.keys(blenderProjects).map(
                 (name, index) => (
@@ -137,7 +136,7 @@ export default function Blender() {
                     </Interactive>
                   </div>
                 ),
-                this
+                this,
               )}
             </div>
           )}

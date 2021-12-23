@@ -39,7 +39,7 @@ import RayBan from "./blender/RayBan";
 import RedSaturation from "./blender/RedSaturation";
 import RobotSculpt from "./blender/RobotSculpt";
 import Room from "./blender/Room";
-//later
+// later
 import RPAnim from "./blender/RPAnim";
 import RPC from "./blender/RPC";
 import RPCAnim from "./blender/RPCAnim";
@@ -107,21 +107,21 @@ export default function BlenderOld() {
     <div>
       <Switch>
         {Object.keys(blenderProjects).map(
-          (name) => (
+          name => (
             <Route
               exact
               path={`/blenderold/${name}`}
               component={blenderProjects[name]}
             />
           ),
-          this
+          this,
         )}
         <Route
           exact
           path="/blenderold"
           render={() => (
             <div>
-              <div className="otherBanner banner"></div>
+              <div className="otherBanner banner" />
               <h1 className="title titleLarge">BlenderOld</h1>
               {Object.keys(blenderProjects).map(
                 (name, index) => (
@@ -136,7 +136,7 @@ export default function BlenderOld() {
                     </Interactive>
                   </div>
                 ),
-                this
+                this,
               )}
             </div>
           )}

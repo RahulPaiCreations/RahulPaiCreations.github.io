@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <div>
-      <div className="homeBanner banner"></div>
+      <div className="homeBanner banner" />
       <p>
         Hi, I'm Rahul Pai. I am an Engineering student at the University of
         Cambridge. On this website I show various projects I have done in my own

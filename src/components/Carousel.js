@@ -1,14 +1,14 @@
-import React, { Component } from "react";
 import PropTypes from "prop-types";
 import {
-  CarouselProvider,
-  Slider,
-  Slide,
   ButtonBack,
   ButtonNext,
-  ImageWithZoom,
+  CarouselProvider,
   DotGroup,
+  ImageWithZoom,
+  Slide,
+  Slider,
 } from "pure-react-carousel";
+import React, { Component } from "react";
 
 export default class Carousel extends Component {
   static propTypes = {
@@ -25,7 +25,7 @@ export default class Carousel extends Component {
     return (
       <CarouselProvider
         naturalSlideWidth={this.props.aspectRatio[0]}
-        naturalSlideHeight={this.props.aspectRatio[1]} //TODO: adaptive aspect ratio
+        naturalSlideHeight={this.props.aspectRatio[1]} // TODO: adaptive aspect ratio
         totalSlides={this.props.captions.length}
         infinite={this.props.captions.length > 1}
         // isIntrinsicHeight
@@ -43,7 +43,7 @@ export default class Carousel extends Component {
                   )}
                 </Slide>
               ),
-              this
+              this,
             )}
           </Slider>
           {this.props.captions.length > 1 && (

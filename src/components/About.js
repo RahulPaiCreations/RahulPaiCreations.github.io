@@ -1,11 +1,9 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Link } from "react-router-dom";
 
 export default function About() {
   return (
     <div>
-      <div className="otherBanner banner"></div>
+      <div className="otherBanner banner" />
       <h1 className="title titleLarge">About</h1>
       <p>
         I used{" "}

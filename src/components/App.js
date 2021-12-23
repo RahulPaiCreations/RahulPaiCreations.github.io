@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="appRoot">
       <Link to="/home">
-        <img src="../../assets/rpc_logo.svg" className="logo" />
+        <img src="../../assets/rpc_logo.svg" alt="RPC Logo" className="logo" />
       </Link>
 
       <nav>

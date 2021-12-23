@@ -25,7 +25,11 @@
     "react/forbid-prop-types": "off",
     "react/jsx-filename-extension": "off",
     "react/no-array-index-key": "off",
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "quotes": [
+      "error",
+      "double"
+    ]
   },
   "parserOptions": {
     "ecmaFeatures": {
