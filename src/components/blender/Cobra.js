@@ -1,9 +1,8 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Cobra() {
   return (
@@ -11,7 +10,7 @@ export default function Cobra() {
       <Switch>
         <Route
           exact
-          path="/blender/cobra"
+          path="/blenderold/cobra"
           render={() => (
             <div>
               <TitleDate title="AC Cobra" date="11th Nov. 2015" />

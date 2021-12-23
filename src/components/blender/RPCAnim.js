@@ -1,9 +1,9 @@
 import React from "react";
 import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function RPCAnim() {
   return (
@@ -11,7 +11,7 @@ export default function RPCAnim() {
       <Switch>
         <Route
           exact
-          path="/blender/rpc-anim"
+          path="/blenderold/rpc-anim"
           render={() => (
             <div>
               <TitleDate title="RPC Title Animation" date="20th Sep. 2014" />

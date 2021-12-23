@@ -1,9 +1,9 @@
 import React from "react";
 import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function BadMedicine() {
   return (
@@ -11,7 +11,7 @@ export default function BadMedicine() {
       <Switch>
         <Route
           exact
-          path="/blender/bad-medicine"
+          path="/blenderold/bad-medicine"
           render={() => (
             <div>
               <TitleDate title="Bad Medicine" date="28th Feb. 2016" />

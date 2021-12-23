@@ -126,7 +126,7 @@ export default function BlenderOld() {
               {Object.keys(blenderProjects).map(
                 (name, index) => (
                   <div className="blenderLink">
-                    <Interactive as={Link} to={`/blender/${name}`}>
+                    <Interactive as={Link} to={`/blenderold/${name}`}>
                       <img
                         src={`../../assets/${name}/thumbnail.jpg`}
                         alt="thumbnail"

@@ -1,9 +1,7 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Window() {
   return (
@@ -11,7 +9,7 @@ export default function Window() {
       <Switch>
         <Route
           exact
-          path="/blender/window"
+          path="/blenderold/window"
           render={() => (
             <div>
               <TitleDate title="Window" date="31st Mar. 2015" />

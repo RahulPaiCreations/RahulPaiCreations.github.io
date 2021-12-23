@@ -1,9 +1,7 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Octagons() {
   return (
@@ -11,7 +9,7 @@ export default function Octagons() {
       <Switch>
         <Route
           exact
-          path="/blender/octagons"
+          path="/blenderold/octagons"
           render={() => (
             <div>
               <TitleDate title="Octagons" date="27th Mar. 2016" />

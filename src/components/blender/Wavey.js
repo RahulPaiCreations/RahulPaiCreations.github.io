@@ -1,9 +1,7 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Wavey() {
   return (
@@ -11,7 +9,7 @@ export default function Wavey() {
       <Switch>
         <Route
           exact
-          path="/blender/wavey"
+          path="/blenderold/wavey"
           render={() => (
             <div>
               <TitleDate title="Wavey" date="16th Mar. 2016" />

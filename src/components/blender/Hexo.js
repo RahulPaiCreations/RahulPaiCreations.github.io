@@ -1,9 +1,8 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Hexo() {
   return (
@@ -11,7 +10,7 @@ export default function Hexo() {
       <Switch>
         <Route
           exact
-          path="/blender/hexo"
+          path="/blenderold/hexo"
           render={() => (
             <div>
               <TitleDate title="Hexo" date="8th Nov. 2014" />

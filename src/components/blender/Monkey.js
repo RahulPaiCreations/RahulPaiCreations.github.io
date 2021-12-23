@@ -1,9 +1,9 @@
 import React from "react";
 import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Monkey() {
   return (
@@ -11,7 +11,7 @@ export default function Monkey() {
       <Switch>
         <Route
           exact
-          path="/blender/monkey"
+          path="/blenderold/monkey"
           render={() => (
             <div>
               <TitleDate title="Hawaiian Suzanne" date="11th Jul. 2015" />

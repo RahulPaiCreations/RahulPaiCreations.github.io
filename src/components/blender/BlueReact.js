@@ -1,9 +1,8 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function BlueReact() {
   return (
@@ -11,7 +10,7 @@ export default function BlueReact() {
       <Switch>
         <Route
           exact
-          path="/blender/blue-react"
+          path="/blenderold/blue-react"
           render={() => (
             <div>
               <TitleDate title="Blue React" date="4th Dec. 2018" />

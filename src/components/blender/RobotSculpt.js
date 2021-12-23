@@ -1,9 +1,8 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function RobotSculpt() {
   return (
@@ -11,7 +10,7 @@ export default function RobotSculpt() {
       <Switch>
         <Route
           exact
-          path="/blender/robot-sculpt"
+          path="/blenderold/robot-sculpt"
           render={() => (
             <div>
               <TitleDate title="Robot Sculpt" date="2nd May 2016" />

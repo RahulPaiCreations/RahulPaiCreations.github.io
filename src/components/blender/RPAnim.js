@@ -1,9 +1,8 @@
 import React from "react";
 import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function RPAnim() {
   return (
@@ -11,7 +10,7 @@ export default function RPAnim() {
       <Switch>
         <Route
           exact
-          path="/blender/rp-anim"
+          path="/blenderold/rp-anim"
           render={() => (
             <div>
               <TitleDate

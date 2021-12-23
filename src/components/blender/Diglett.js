@@ -1,9 +1,9 @@
 import React from "react";
 import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Diglett() {
   return (
@@ -11,7 +11,7 @@ export default function Diglett() {
       <Switch>
         <Route
           exact
-          path="/blender/diglett"
+          path="/blenderold/diglett"
           render={() => (
             <div>
               <TitleDate title="Diglett" date="3rd Feb. 2014" />

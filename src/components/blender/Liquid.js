@@ -1,9 +1,7 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Liquid() {
   return (
@@ -11,7 +9,7 @@ export default function Liquid() {
       <Switch>
         <Route
           exact
-          path="/blender/liquid"
+          path="/blenderold/liquid"
           render={() => (
             <div>
               <TitleDate title="Liquid" date="28th Aug. 2013" />

@@ -1,9 +1,8 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function NiceDay() {
   return (
@@ -11,7 +10,7 @@ export default function NiceDay() {
       <Switch>
         <Route
           exact
-          path="/blender/have-a-nice-day"
+          path="/blenderold/have-a-nice-day"
           render={() => (
             <div>
               <TitleDate title="Have A Nice Day" date="26th Feb. 2016" />

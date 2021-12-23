@@ -1,9 +1,8 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Bubble() {
   return (
@@ -11,7 +10,7 @@ export default function Bubble() {
       <Switch>
         <Route
           exact
-          path="/blender/bubble"
+          path="/blenderold/bubble"
           render={() => (
             <div>
               <TitleDate title="Bubble" date="14th Feb. 2016" />

@@ -1,9 +1,7 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Fireball() {
   return (
@@ -11,7 +9,7 @@ export default function Fireball() {
       <Switch>
         <Route
           exact
-          path="/blender/fireball"
+          path="/blenderold/fireball"
           render={() => (
             <div>
               <TitleDate title="Fireball" date="20th Mar. 2014" />

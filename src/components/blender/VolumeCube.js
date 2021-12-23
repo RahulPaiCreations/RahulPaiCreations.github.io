@@ -1,9 +1,8 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function VolumeCube() {
   return (
@@ -11,7 +10,7 @@ export default function VolumeCube() {
       <Switch>
         <Route
           exact
-          path="/blender/volume-cube"
+          path="/blenderold/volume-cube"
           render={() => (
             <div>
               <TitleDate title="Volume Cube" date="25th Mar. 2016" />

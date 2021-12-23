@@ -1,9 +1,8 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function Pokeballs() {
   return (
@@ -11,7 +10,7 @@ export default function Pokeballs() {
       <Switch>
         <Route
           exact
-          path="/blender/pokeballs"
+          path="/blenderold/pokeballs"
           render={() => (
             <div>
               <TitleDate title="Pokéballs" date="18th Dec. 2013" />

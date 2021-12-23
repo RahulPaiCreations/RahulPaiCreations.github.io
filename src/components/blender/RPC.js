@@ -1,9 +1,8 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Carousel from "../Carousel";
 import PageNotFound from "../PageNotFound";
 import TitleDate from "../TitleDate";
-import Carousel from "../Carousel";
 
 export default function RPC() {
   return (
@@ -11,7 +10,7 @@ export default function RPC() {
       <Switch>
         <Route
           exact
-          path="/blender/rpc"
+          path="/blenderold/rpc"
           render={() => (
             <div>
               <TitleDate title="RPC Logo" date="3rd Aug. 2013" />
