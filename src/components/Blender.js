@@ -107,7 +107,7 @@ export default function Blender() {
     <div>
       <Switch>
         {Object.keys(blenderProjects).map(
-          name => (
+          (name) => (
             <Route
               exact
               path={`/blender/${name}`}

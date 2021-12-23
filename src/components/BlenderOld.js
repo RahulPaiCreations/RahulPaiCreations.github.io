@@ -107,7 +107,7 @@ export default function BlenderOld() {
     <div>
       <Switch>
         {Object.keys(blenderProjects).map(
-          name => (
+          (name) => (
             <Route
               exact
               path={`/blenderold/${name}`}
