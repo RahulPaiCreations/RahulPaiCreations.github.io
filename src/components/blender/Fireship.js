@@ -24,7 +24,7 @@ export default function Fireship() {
                 opens upwards and two laser guns at the sides. This was my first
                 ever project in Blender and so it is quite special to me,
                 despite its simplicity. I added the background using Photoshop
-                because I didn't know about the compositor at the time.
+                because I didn&apos;t know about the compositor at the time.
               </p>
               <Carousel
                 folder="../../assets/fireship"

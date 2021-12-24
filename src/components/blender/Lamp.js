@@ -15,9 +15,9 @@ export default function Lamp() {
             <div>
               <TitleDate title="Desk Lamp" date="21st Jan. 2013" />
               <p>
-                A simple attempt at a lamp. I didn't even smooth the lamp's
-                neck. You can't see easily in the render, but I wrote ON and OFF
-                on the two sides of the switch.
+                A simple attempt at a lamp. I didn&apos;t even smooth the
+                lamp&apos;s neck. You can&apos;t see easily in the render, but I
+                wrote ON and OFF on the two sides of the switch.
               </p>
               <Carousel folder="../../assets/lamp" captions={[""]} />
             </div>

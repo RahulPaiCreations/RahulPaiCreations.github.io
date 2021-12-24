@@ -50,7 +50,7 @@ export default function Blender() {
                     </h1>
                     {project.alias != null &&
                       project.alias.trim().length > 0 && (
-                        <div className="alias">"{project.alias}"</div>
+                        <div className="alias">&quot;{project.alias}&quot;</div>
                       )}
                     <div className="date">{dateFormat(project.date)}</div>
                   </div>
