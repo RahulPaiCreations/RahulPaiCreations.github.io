@@ -1,118 +1,61 @@
 import React from "react";
 import Interactive from "react-interactive";
 import { Link, Route, Switch } from "react-router-dom";
-import blender from "./blender.json";
-import Alien from "./blender/Alien";
-import BadMedicine from "./blender/BadMedicine";
-import Batman from "./blender/Batman";
-import Blerb from "./blender/Blerb";
-import BlueReact from "./blender/BlueReact";
-import Bubble from "./blender/Bubble";
-import CharlieBrown from "./blender/CharlieBrown";
-import Cityscape from "./blender/Cityscape";
-import Cobra from "./blender/Cobra";
-import Coke from "./blender/Coke";
-import Diglett from "./blender/Diglett";
-import Elucidator from "./blender/Elucidator";
-import FibreOptics from "./blender/FibreOptics";
-import Fireball from "./blender/Fireball";
-import Fireship from "./blender/Fireship";
-import Flower from "./blender/Flower";
-import Glasses from "./blender/Glasses";
-import Gun from "./blender/Gun";
-import Heart from "./blender/Heart";
-import HeartFracture from "./blender/HeartFracture";
-import HeartRiver from "./blender/HeartRiver";
-import Hexo from "./blender/Hexo";
-import KEGS10Y from "./blender/KEGS10Y";
-import Kitchen from "./blender/Kitchen";
-import Lamp from "./blender/Lamp";
-import LegoWater from "./blender/LegoWater";
-import Liquid from "./blender/Liquid";
-import Monkey from "./blender/Monkey";
-import NiceDay from "./blender/NiceDay";
-import Octagons from "./blender/Octagons";
-import Parker from "./blender/Parker";
-import Pokeballs from "./blender/Pokeballs";
-import ProductDesign from "./blender/ProductDesign";
-import RandomCubes from "./blender/RandomCubes";
-import RayBan from "./blender/RayBan";
-import RedSaturation from "./blender/RedSaturation";
-import RobotSculpt from "./blender/RobotSculpt";
-import Room from "./blender/Room";
-// later
-import RPAnim from "./blender/RPAnim";
-import RPC from "./blender/RPC";
-import RPCAnim from "./blender/RPCAnim";
-import Screen from "./blender/Screen";
-import Spaceship from "./blender/Spaceship";
-import SteelHorse from "./blender/SteelHorse";
-import Torso from "./blender/Torso";
-import VolumeCube from "./blender/VolumeCube";
-import Wavey from "./blender/Wavey";
-import Window from "./blender/Window";
+import blender from "./blender.json"; // TODO: use Axios or fetch to get this dynamically
 import PageNotFound from "./PageNotFound";
 
+function toTitleCase(str) {
+  return str
+    .replace(/-/g, " ")
+    .replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1));
+}
+
+function projectTitle(project) {
+  return project.title == null ? toTitleCase(project.name) : project.title;
+}
+
+function dateFormat(date) {
+  if (date == null) {
+    return "";
+  }
+  const dateSplit = date.split("/");
+  if (dateSplit.length !== 3) {
+    return date;
+  }
+  // TODO: consider using a better formatter like MomentJS
+  return Intl.DateTimeFormat("en-GB", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  }).format(new Date(dateSplit[2], dateSplit[1] - 1, dateSplit[0]));
+}
+
 export default function Blender() {
-  const blenderProjects = {
-    fireship: Fireship,
-    coke: Coke,
-    lamp: Lamp,
-    spaceship: Spaceship,
-    rpc: RPC,
-    parker: Parker,
-    liquid: Liquid,
-    "kegs-10y": KEGS10Y,
-    cityscape: Cityscape,
-    pokeballs: Pokeballs,
-    kitchen: Kitchen,
-    diglett: Diglett,
-    "fibre-optics": FibreOptics,
-    "rpc-anim": RPCAnim,
-    hexo: Hexo,
-    "random-cubes": RandomCubes,
-    fireball: Fireball,
-    window: Window,
-    glasses: Glasses,
-    flower: Flower,
-    screen: Screen,
-    "ray-ban": RayBan,
-    elucidator: Elucidator,
-    batman: Batman,
-    heart: Heart,
-    "heart-river": HeartRiver,
-    monkey: Monkey,
-    alien: Alien,
-    blerb: Blerb,
-    cobra: Cobra,
-    "steel-horse": SteelHorse,
-    "heart-fracture": HeartFracture,
-    bubble: Bubble,
-    "have-a-nice-day": NiceDay,
-    "bad-medicine": BadMedicine,
-    wavey: Wavey,
-    room: Room,
-    "volume-cube": VolumeCube,
-    octagons: Octagons,
-    "lego-water": LegoWater,
-    "robot-sculpt": RobotSculpt,
-    gun: Gun,
-    torso: Torso,
-    "charlie-brown": CharlieBrown,
-    "red-saturation": RedSaturation,
-    "rp-anim": RPAnim,
-    "product-design": ProductDesign,
-    "blue-react": BlueReact,
-  };
   return (
     <div>
       <Switch>
-        {Object.keys(blenderProjects).map(
-          (name) => (
+        {blender.projects.map(
+          (project) => (
             <Route
               exact
-              path={`/blender/${name}`}
-              component={blenderProjects[name]}
+              path={`/blender/${project.name}`}
+              render={() => (
+                <div>
+                  <div className="titleDate">
+                    <h1
+                      className="title titleLarge"
+                      style={{ display: "inline" }}
+                    >
+                      {projectTitle(project)}
+                    </h1>
+                    {project.alias != null &&
+                      project.alias.trim().length > 0 && (
+                        <div className="alias">"{project.alias}"</div>
+                      )}
+                    <div className="date">{dateFormat(project.date)}</div>
+                  </div>
+                </div>
+              )}
             />
           ),
           this,
@@ -132,11 +75,13 @@ export default function Blender() {
                         src={`../../assets/${project.name}/thumbnail.jpg`}
                         alt="thumbnail"
                       />
-                      <div className="title">
-                        <em>
-                          {index + 1}.{" "}
-                          {project.name.toUpperCase().replace("-", " ")}
-                        </em>
+                      <div className="titleDate">
+                        <div className="title">
+                          <em>
+                            {index + 1}. {projectTitle(project)}
+                          </em>
+                        </div>
+                        <div className="date">{dateFormat(project.date)}</div>
                       </div>
                     </Interactive>
                   </div>

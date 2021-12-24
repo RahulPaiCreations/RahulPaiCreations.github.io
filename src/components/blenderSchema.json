@@ -9,10 +9,24 @@
                     "name": {
                         "type": "string",
                         "description": "The name of the project"
+                    },
+                    "date": {
+                        "type": "string",
+                        "description": "The date the project was completed",
+                        "pattern": "^[1-9][0-9]?\/[1-9][0-9]?\/20[0-9]{2}$"
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "The title of the project"
+                    },
+                    "alias": {
+                        "type": "string",
+                        "description": "The alias of the project"
                     }
                 },
                 "required": [
-                    "name"
+                    "name",
+                    "date"
                 ]
             }
         }
