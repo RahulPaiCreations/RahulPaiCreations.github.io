@@ -4,210 +4,931 @@
         {
             "name": "fireship",
             "date": "11/9/2011",
-            "alias": "Pidom Fighter 314"
+            "alias": "Pidom Fighter 314",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This amazing space ship was inspired from star wars, but is very different in many ways. It has a long front glass window that opens upwards and two laser guns at the sides. This was my first ever project in Blender and so it is quite special to me, despite its simplicity. I added the background using Photoshop because I didn't know about the compositor at the time."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Main Render",
+                        "Front",
+                        "Back",
+                        "Window Open"
+                    ],
+                    "aspectRatio": [
+                        40,
+                        24
+                    ]
+                },
+                {
+                    "type": "youtube",
+                    "id": "dQw4w9WgXcQ"
+                }
+            ]
         },
         {
             "name": "coke",
             "title": "Coke Bottles",
-            "date": "15/5/2012"
+            "date": "15/5/2012",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "These are simply three coke bottles that I made using a cylinder. This was my first endeavour with textures. This was rendered in Blender Internal."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ],
+                    "aspectRatio": [
+                        65,
+                        57
+                    ]
+                }
+            ]
         },
         {
             "name": "lamp",
             "title": "Desk Lamp",
-            "date": "21/1/2013"
+            "date": "21/1/2013",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "A simple attempt at a lamp. I didn't even smooth the lamp's neck. You can't see easily in the render, but I wrote ON and OFF on the two sides of the switch."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "spaceship",
             "date": "31/5/2013",
-            "alias": "tweezers"
+            "alias": "tweezers",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This is a spaceship I made using Andre Price's [tutorial](https://www.blenderguru.com/tutorials/create-a-spaceship-part-1). I am very pleased with the result and I love the blue booster flames at the back. I kept it simple by leaving out the wacky blue lights from Andrew Price's. This project introduced me to the Color Ramp node which I really like to use to add more control. Probably my first Cycles Render."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "rpc",
             "title": "RPC Logo",
-            "date": "3/8/2013"
+            "date": "3/8/2013",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "I made this using Andrew Price's [tutorial](https://www.blenderguru.com/tutorials/how-to-make-metallic-text) but I modified certain parts of it such as changing the colour to blue and adding Egyptian Hieroglyph engravings on the sides. At this stage I was still very new to Cycles and I learnt about Bump maps and material nodes in general."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Final Render",
+                        "Alternate Textures",
+                        "First Render"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Then I modified it slightly and played with the font and added a more dramatic camera angle to make this icon:"
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ],
+                    "aspectRatio": [
+                        1,
+                        1
+                    ],
+                    "subfolder": "icon",
+                    "style": {
+                        "width": "50%",
+                        "margin": "auto"
+                    }
+                }
+            ]
         },
         {
             "name": "parker",
             "title": "Parker Pen",
-            "date": "20/9/2013"
+            "date": "20/9/2013",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "One day, in class, I sat bored, twiddling my pen....BOOM this project was born. My Grandfather gave this pen to me and its quite special to me (yes, I know it's just a pen). I liked working on this, because it was challenging to get the shape of the hook (is that what its called?) right, and to get the materials right. In retrospect I should have made the plane have a wall, in order to avoid the black space that is there now. I had hoped to add some details such as the logo engraving and maybe even rig it with the cartridge inside."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "liquid",
-            "date": "28/9/2013"
+            "date": "28/9/2013",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This was an experiment with the new water simulation, and frankly I was bored of homework xD. I made the text into a mesh, then made it into water, then rendered the animation backwards."
+                },
+                {
+                    "type": "youtube",
+                    "id": "RyNOj-Ei-YM"
+                }
+            ]
         },
         {
             "name": "kegs-10y",
             "title": "KEGS 10Y",
-            "date": "3/10/2013"
+            "date": "3/10/2013",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This is the logo/cover photo for my form's FB group. After many changes to the font, I started experimenting with a cool motion blur like effect using Color Ramp."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Final Version (V5)",
+                        "V1",
+                        "V2",
+                        "V3",
+                        "V4",
+                        "V6"
+                    ]
+                }
+            ]
         },
         {
             "name": "cityscape",
-            "date": "28/10/2013"
+            "date": "28/10/2013",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This was an attempt at a city sunset view. I generated the land with some kind of procedural squares displacement. Then I created a house and a skyscraper and spawned them on the land using a particle system. Some are on the wrong land faces, so I said it was after an earthquake 😅."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "pokeballs",
             "title": "Pokéballs",
-            "date": "18/12/2013"
+            "date": "18/12/2013",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Yes. I am a Pokéfan. I have been a fan of Pokémon for a number of years, and that lead me to start this project. It is quite simple, since the Pokéballs are simply modified spheres, but I learnt to make my own textures, like in the Ultra Ball, and to add complexities, such as the details on the Master and Great Balls."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Pokéball",
+                        "Ultra Ball",
+                        "Great Ball",
+                        "Master Ball"
+                    ]
+                }
+            ]
         },
         {
             "name": "kitchen",
-            "date": "11/1/2014"
+            "date": "11/1/2014",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "An unfinished attempt at a kitchen."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "diglett",
-            "date": "3/2/2014"
+            "date": "3/2/2014",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Return of the [wacky background](/blender/fireship). This is a model of the Pokémon [Diglett](https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)). I spent most of the time on the rock part, which I textured using a normal rock texture. what made it interesting is that I used the HSB node to make it look how I wanted, as it was originally just sandstone. I also played with the displacement to make it not too sharp and not too smooth. Hope you like it!"
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "fibre-optics",
-            "date": "7/4/2014"
+            "date": "7/4/2014",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "These are some fibre optic cables I made using Andrew Price's [tutorial](https://www.blenderguru.com/tutorials/make-an-abstract-background). I made some variations to give different effects, using the compositor."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "rpc-anim",
             "title": "RPC Title Animation",
-            "date": "20/9/2014"
+            "date": "20/9/2014",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "I got the idea for this from sci-fi/spy movies where they user lasers to scan objects. In this case my logo is being scanned and then finally it appears. I imitated a tubelight by flashing the image. I then added a printer scanner sound for the scanning part and tubelight sounds. I am very proud of this one."
+                },
+                {
+                    "type": "youtube",
+                    "id": "r6QUKpr5tPo"
+                },
+                {
+                    "type": "text",
+                    "text": "I use the final frame as my desktop wallpaper, and [a modified version](/blender/rp-anim) for [my YouTube channel](https://www.youtube.com/channel/UCuP4DBqZZAC-PPleJTnQspA)."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "hexo",
-            "date": "8/11/2014"
+            "date": "8/11/2014",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "I had a OnePlus One, and I really liked the use of hexagons in the Hexo theme, but for me the backgrounds were too simple and flat. I played with the idea of Hexagons and with inspiration from Tron, I made this Background, which I use now as the wallpaper on my phone, my PC and of course this website! Call me cocky but I love it! You probably have already guessed that blue is my favourite colour."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ],
+                    "aspectRatio": [
+                        18,
+                        16
+                    ]
+                }
+            ]
         },
         {
             "name": "random-cubes",
-            "date": "25/12/2014"
+            "date": "25/12/2014",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This is another wallpaper I made, but this is simply a copy of another wallpaper I saw on my friend *James Fraser*'s phone. I challenged myself to recreate it and I think I was quite successful. In retrospect, the bevel on the cubes should have been sharper, and there should have been more red cubes."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ],
+                    "aspectRatio": [
+                        18,
+                        16
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Below is the original that I tried to copy:"
+                },
+                {
+                    "type": "text",
+                    "text": "[![Original](https://web.archive.org/web/20190109022124if_/http://alltechsols.com/media/images/abstract_black_and_red_cubes-1920x1080_1.jpg)](https://web.archive.org/web/20190109022124/http://alltechsols.com/media/images/abstract_black_and_red_cubes-1920x1080_1.jpg)"
+                }
+            ]
         },
         {
             "name": "fireball",
-            "date": "20/3/2015"
+            "date": "20/3/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This was an experiment with fire simulation. I had intended to use this with a camera tracking project but never got around to it. Maybe in the future?"
+                },
+                {
+                    "type": "youtube",
+                    "id": "ZGTW6HN8hKQ"
+                }
+            ]
         },
         {
             "name": "window",
-            "date": "31/3/2015"
+            "date": "31/3/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This project uses camera tracking. I added a window and some objects to my wall. I think this turned out really well. I had intended to add spaceships flying outside (hence the sci-fi outdoors), but didn't get around to it."
+                },
+                {
+                    "type": "youtube",
+                    "id": "sfMxgde4bQ8"
+                },
+                {
+                    "type": "text",
+                    "text": "Below is the original footage. The blue tac pieces on the wall are used to track the camera position and rotation."
+                },
+                {
+                    "type": "youtube",
+                    "id": "LMpxi6eqAGQ"
+                }
+            ]
         },
         {
             "name": "glasses",
-            "title": "glasses",
-            "date": "2/4/2015"
+            "alias": "How Many Fingers?",
+            "date": "2/4/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "I got frustrated by people thinking I can't count fingers properly just because I haven't got my glasses on. Unless you're really far away, I can still make out the shapes."
+                },
+                {
+                    "type": "youtube",
+                    "id": "W4B3iLPGOKU"
+                }
+            ]
         },
         {
             "name": "flower",
-            "date": "20/4/2015"
+            "date": "20/4/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "An unfinished attempt at a flower. The petals are done with a procedural texture, based on a noise texture."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "screen",
-            "date": "9/5/2015"
+            "date": "9/5/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This was a test to see if I can use a video as a texture. The answer is yes! I made a model of my monitor at the time and used a screen recording of blender. *Blenderception*"
+                },
+                {
+                    "type": "youtube",
+                    "id": "S6Y6JFZJfAU"
+                }
+            ]
         },
         {
             "name": "ray-ban",
             "title": "Ray Ban Glasses",
-            "date": "14/5/2015"
+            "date": "14/5/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "",
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "elucidator",
-            "date": "2/6/2015"
+            "date": "2/6/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Elucidator, my favourite of Kirito's swords. A nice challenge, and I think it turned out great. For a while I used the final render as a cover photo. This is my first weapon model."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Final Render",
+                        "Final Model"
+                    ]
+                }
+            ]
         },
         {
             "name": "batman",
-            "date": "17/6/2015"
+            "date": "17/6/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "My first attempt at sculpting and retopo. I am very happy with how it turned out, although I now see the proportions are a bit off. I used all procedural textures for the eyes, skin etc., which I was quite proud of."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Main Render",
+                        "Mouth",
+                        "Eye",
+                        "Fun early render, using a car paint material and the Ray Ban glasses from before"
+                    ],
+                    "aspectRatio": [
+                        1,
+                        1
+                    ]
+                }
+            ]
         },
         {
             "name": "heart",
-            "date": "18/6/2015"
+            "date": "18/6/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Another [wacky](/blender/fireship) [background](/blender/diglett). Randomly decided to model a heart. Based heavily on a single reference image I found of another model. If I recall correctly, I used the skin modifier for the surface vessels. Quite happy with the result, and I used the model for two more projects. The background is using a radial Voronoi texture."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ],
+                    "aspectRatio": [
+                        1,
+                        1
+                    ]
+                }
+            ]
         },
         {
             "name": "heart-river",
             "title": "Left My Heart In Tokyo",
-            "date": "21/6/2015"
+            "date": "21/6/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "A reference to [this song](https://www.youtube.com/watch?v=6gviIbLw2AU). Used the heart from before. It is supposed to be laying on the grass \"down by the river\". The reflections in the water are skyscrapers with Japansese neon writing as you'd expect in Tokyo. Not my most realistic render..."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "monkey",
             "title": "Hawaiian Suzanne",
-            "date": "11/7/2015"
+            "date": "11/7/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Tried to make something using [Suzanne](https://en.wikipedia.org/wiki/Blender_(software)#Suzanne,_the_%22monkey%22_mascot). Reused the eyes from [Batman](/blender/batman)."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ],
+                    "aspectRatio": [
+                        9,
+                        16
+                    ],
+                    "style": {
+                        "width": "50%",
+                        "margin": "auto"
+                    }
+                }
+            ]
         },
         {
             "name": "alien",
-            "date": "23/8/2015"
+            "date": "23/8/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Attempt at an alien character. Characters are not my forté... Again, reused the eyes from [Batman](/blender/batman)."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Final Render",
+                        "Model before materials and pose"
+                    ]
+                }
+            ]
         },
         {
             "name": "blerb",
-            "date": "5/9/2015"
+            "date": "5/9/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Some random abstract works I made one day when I was bored. Couldn't think of a name for the files, so I just used a random word: \"blerb\"."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "cobra",
             "title": "AC Cobra",
-            "date": "11/11/2015"
+            "date": "11/11/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "My favourite classic car and my first car model in blender. This is my first big project for which I did not use any tutorials. I experimented and tried many new things, learning a lot along the way. It took about 6 months; it's my biggest project."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Main Render",
+                        "Front",
+                        "Internals",
+                        "Side",
+                        "Final Wheel"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Some extras:"
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Mike Pan style early render",
+                        "Herbie outfit, with the leather cover I had before the internals",
+                        "AC Cobra rims",
+                        "Unnecessary detail lol"
+                    ],
+                    "subfolder": "extras"
+                }
+            ]
         },
         {
             "name": "steel-horse",
-            "date": "20/12/2015"
+            "date": "20/12/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "This is a reference to the Bon Jovi song [Wanted Dead or Alive](https://www.youtube.com/watch?v=SRvCvsRp5ho) in which one of the lines is \"I'm a cowboy, on a __steel horse__ I ride\". I used a diagram of a horse as a reference while modelling. I also looked a t a few pictures of rearing horses for the pose later. Rigging and posing the model was the hardest part as it was my first time. I've very happy with this. I think it looks cool, although mechanically it doesn't make sense!"
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Final Render",
+                        "Finished Model",
+                        "Alternate View",
+                        "Inside View"
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "One time while navigating in Blender, I accidentally went inside the horse and discovered quite a cool view. Just for fun, I rendered this fly through animation:"
+                },
+                {
+                    "type": "youtube",
+                    "id": "jwcmGPCYfDs"
+                }
+            ]
         },
         {
             "name": "heart-fracture",
             "title": "Shot Through The Heart",
-            "date": "30/12/2015"
+            "date": "30/12/2015",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Experimenting with the [fracture modifier build](https://blenderphysics.com/fracturemodifier/) of blender, I fractured the [heart model](/blender/heart) I had already made. This was inspired from the Bon Jovi song [You Give Love A Bad Name](https://www.youtube.com/watch?v=KrZHPOeOxQQ) in which the first line is \"Shot through the heart\"."
+                },
+                {
+                    "type": "youtube",
+                    "id": "OCU-DiBvAkg"
+                }
+            ]
         },
         {
             "name": "bubble",
-            "date": "14/2/2016"
+            "date": "14/2/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Attempt at a bubble material in Cycles. Quite happy with the result."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "Render",
+                        "Material Nodes"
+                    ]
+                }
+            ]
         },
         {
             "name": "have-a-nice-day",
-            "date": "26/2/2016"
+            "date": "26/2/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Exercise using Bezier Curves in Blender. It's the logo from Bon Jovi song [Have A Nice Day](https://www.youtube.com/watch?v=uCg2BoKiuOM). I think I also made the red part leather."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "bad-medicine",
-            "date": "28/2/2016"
+            "date": "28/2/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Another [Bon Jovi reference](/blender/heart-fracture). It's referencing [Bad Medicine](https://www.youtube.com/watch?v=uCg2BoKiuOM) in which the first line is \"Your love is like bad medicine\". I got the skull texture from online. I used rigid body simulation for the heart pills. The floor is just something random I came up with. Very happy with the result."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "wavey",
-            "date": "16/3/2016"
+            "date": "16/3/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Just messing around with the displacement modifier and a metallic shader."
+                },
+                {
+                    "type": "youtube",
+                    "id": "GbezEqgokDg"
+                }
+            ]
         },
         {
             "name": "room",
-            "date": "23/3/2016"
+            "date": "23/3/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "An unfinished attempt at my room. I painted some displacement maps for the PC details, rather than creating geometry, which was new for me."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "volume-cube",
-            "date": "25/3/2016"
+            "date": "25/3/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Messing with volume shaders. Just one material and the Default Cube! I was initially trying to make a volumetric version of the thing on [this post](http://durknfred.blogspot.co.uk/2015/02/cycles-voxels.html) by Derek Barker, but it didn't really work out. Nevertheless, I think this is interesting and I quite like it."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "aspectRatio": [
+                        1,
+                        1
+                    ]
+                }
+            ]
         },
         {
             "name": "octagons",
-            "date": "27/3/2016"
+            "date": "27/3/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Random animation when messing with DupliVerts. The bump map was procedural, and it's qutie weird."
+                },
+                {
+                    "type": "youtube",
+                    "id": "TZ56mkq4aRs"
+                }
+            ]
         },
         {
             "name": "lego-water",
-            "date": "30/3/2016"
+            "date": "30/3/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Fluid simulation then Remesh in Blocks mode, then DupliVerts using a single Lego piece. Not really sure why it jumps around occasionally, but otherwise quite happy with the result."
+                },
+                {
+                    "type": "youtube",
+                    "id": "MHciGvJJa9k"
+                }
+            ]
         },
         {
             "name": "robot-sculpt",
-            "date": "2/5/2016"
+            "date": "2/5/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "An unfinished attempt to sculpt a robot head."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "gun",
-            "date": "24/6/2016"
+            "date": "24/6/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "As a modelling exercise I decided to make a gun. This is because of the relatively complex shapes. I really enjoyed this hard surface modelling. Then I made the materials, all procedurally, using vertex colours to create a mask for the grip displacement. I was quite happy with the lighting, aiming for a display kind of atmosphere. The wood material is the same as the steering wheel from my [AC Cobra](/blender/cobra)."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "torso",
-            "date": "10/8/2016"
+            "date": "10/8/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Two attempts at sculpting a torso. This was supposed to be practice for a character, but I never got to making the actual character..."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "charlie-brown",
-            "date": "16/10/2016"
+            "date": "16/10/2016",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Quite happy with this one. I painted a displacement map for the mouth, which I also used as a mask in the material shader. I had planned to then modify it into a representation of myself, but didn't get round to it."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ],
+                    "aspectRatio": [
+                        1,
+                        1
+                    ]
+                }
+            ]
         },
         {
             "name": "red-saturation",
-            "date": "31/1/2017"
+            "date": "31/1/2017",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Although there is a significant learning curve, after some practice, I find the Blender compositor quite intuitive; and it's super power full. Occasionally I use it to edit photos. This time I challenged myself to mimic this mono color effect I've seen elsewhere."
+                },
+                {
+                    "type": "text",
+                    "text": "I created a Variable Saturation node, which just mixes between the image and its greyscale version. Then I used the Separate RGB node with some math as a mask for the Variable Saturation. Turned out quite nice."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "After",
+                        "Before"
+                    ]
+                }
+            ]
         },
         {
             "name": "rp-anim",
             "title": "RP Title Animation",
-            "date": "18/7/2017"
+            "date": "18/7/2017",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "When I was starting my [YouTube channel](https://www.youtube.com/channel/UCuP4DBqZZAC-PPleJTnQspA) I modified [my previous animation](/blender/rpc-anim) too just be my name. I use this as the intro for all [my guitar videos](https://www.youtube.com/playlist?list=PLRL_yqRoHeK5m2uDthUII_t6TRA487kBG)."
+                },
+                {
+                    "type": "youtube",
+                    "id": "c58yjUr8d5M"
+                }
+            ]
         },
         {
             "name": "product-design",
-            "date": "14/4/2018"
+            "date": "14/4/2018",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "At uni we had a product design coursework, for which I designed solar street lights. I decided to use Blender to illustrate my idea."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        ""
+                    ]
+                }
+            ]
         },
         {
             "name": "blue-react",
-            "date": "4/12/2018"
+            "date": "4/12/2018",
+            "elements": [
+                {
+                    "type": "text",
+                    "text": "Inspired by the new Facebook angry react, I decided to create some of my own."
+                },
+                {
+                    "type": "images",
+                    "captions": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "aspectRatio": [
+                        1,
+                        1
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -43,12 +43,17 @@ code {
 }
 
 p {
+  margin-top: 3vh;
   margin-bottom: 3vh;
   line-height: 1.4;
 }
 
 p:last-child {
   margin-bottom: 0;
+}
+
+p:first-child {
+  margin-top: 0;
 }
 
 .appRoot {
@@ -255,6 +260,7 @@ nav a:last-child {
   display: inline-block;
   padding-top: 1ex;
   text-align: center;
+  margin: auto;
 }
 
 .blenderLink img {

@@ -22,12 +22,118 @@
                     "alias": {
                         "type": "string",
                         "description": "The alias of the project"
+                    },
+                    "elements": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "description": "The type of the element",
+                                    "enum": [
+                                        "text",
+                                        "images",
+                                        "youtube"
+                                    ]
+                                },
+                                "style": {
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "type"
+                            ],
+                            "allOf": [
+                                {
+                                    "if": {
+                                        "properties": {
+                                            "type": {
+                                                "const": "text"
+                                            }
+                                        }
+                                    },
+                                    "then": {
+                                        "properties": {
+                                            "text": {
+                                                "type": "string",
+                                                "description": "The text of the element"
+                                            }
+                                        },
+                                        "required": [
+                                            "text"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "if": {
+                                        "properties": {
+                                            "type": {
+                                                "const": "images"
+                                            }
+                                        }
+                                    },
+                                    "then": {
+                                        "properties": {
+                                            "captions": {
+                                                "type": "array",
+                                                "description": "The captions for the images",
+                                                "items": {
+                                                    "type": "string",
+                                                    "description": "A caption for an image"
+                                                }
+                                            },
+                                            "aspectRatio": {
+                                                "type": "array",
+                                                "description": "The aspect ratio for the image viewer: [width, height]",
+                                                "items": {
+                                                    "type": "number",
+                                                    "minimum": 0
+                                                },
+                                                "minItems": 2,
+                                                "maxItems": 2
+                                            },
+                                            "subfolder": {
+                                                "type": "string",
+                                                "description": "The subfolder of the project where the images are located",
+                                                "pattern": "^[a-zA-Z0-9_\\-]+$"
+                                            }
+                                        },
+                                        "required": [
+                                            "captions"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "if": {
+                                        "properties": {
+                                            "type": {
+                                                "const": "youtube"
+                                            }
+                                        }
+                                    },
+                                    "then": {
+                                        "properties": {
+                                            "id": {
+                                                "type": "string",
+                                                "description": "The id of the youtube video"
+                                            }
+                                        },
+                                        "required": [
+                                            "id"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
                     }
                 },
                 "required": [
                     "name",
-                    "date"
-                ]
+                    "date",
+                    "elements"
+                ],
+                "additionalProperties": false
             }
         }
     }

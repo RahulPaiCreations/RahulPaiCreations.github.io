@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div>
+    <React.Fragment>
       <div className="homeBanner banner" />
       <p>
         Hi, I'm Rahul Pai. I am an Engineering student at the University of
@@ -13,6 +13,6 @@ export default function Home() {
         Java for Android app development and C++ for various coursework projects
         at Uni.
       </p>
-    </div>
+    </React.Fragment>
   );
 }

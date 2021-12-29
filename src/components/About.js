@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
+    <React.Fragment>
       <div className="otherBanner banner" />
       <h1 className="title titleLarge">About</h1>
       <p>
@@ -26,6 +26,6 @@ export default function About() {
         </a>
         .
       </p>
-    </div>
+    </React.Fragment>
   );
 }
