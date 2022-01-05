@@ -22,10 +22,6 @@
                         40,
                         24
                     ]
-                },
-                {
-                    "type": "youtube",
-                    "id": "dQw4w9WgXcQ"
                 }
             ]
         },
@@ -74,7 +70,14 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "This is a spaceship I made using Andre Price's [tutorial](https://www.blenderguru.com/tutorials/create-a-spaceship-part-1). I am very pleased with the result and I love the blue booster flames at the back. I kept it simple by leaving out the wacky blue lights from Andrew Price's. This project introduced me to the Color Ramp node which I really like to use to add more control. Probably my first Cycles Render."
+                    "text": "This is a spaceship I made using Andre Price's ___. I am very pleased with the result and I love the blue booster flames at the back. I kept it simple by leaving out the wacky blue lights from Andrew Price's. This project introduced me to the Color Ramp node which I really like to use to add more control. Probably my first Cycles Render.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "tutorial",
+                            "url": "https://www.blenderguru.com/tutorials/create-a-spaceship-part-1"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -91,7 +94,14 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "I made this using Andrew Price's [tutorial](https://www.blenderguru.com/tutorials/how-to-make-metallic-text) but I modified certain parts of it such as changing the colour to blue and adding Egyptian Hieroglyph engravings on the sides. At this stage I was still very new to Cycles and I learnt about Bump maps and material nodes in general."
+                    "text": "I made this using Andrew Price's ___ but I modified certain parts of it such as changing the colour to blue and adding Egyptian Hieroglyph engravings on the sides. At this stage I was still very new to Cycles and I learnt about Bump maps and material nodes in general.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "tutorial",
+                            "url": "https://www.blenderguru.com/tutorials/how-to-make-metallic-text"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -233,7 +243,19 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "Return of the [wacky background](/blender/fireship). This is a model of the Pokémon [Diglett](https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)). I spent most of the time on the rock part, which I textured using a normal rock texture. what made it interesting is that I used the HSB node to make it look how I wanted, as it was originally just sandstone. I also played with the displacement to make it not too sharp and not too smooth. Hope you like it!"
+                    "text": "Return of the ___. This is a model of the Pokémon ___. I spent most of the time on the rock part, which I textured using a normal rock texture. what made it interesting is that I used the HSB node to make it look how I wanted, as it was originally just sandstone. I also played with the displacement to make it not too sharp and not too smooth. Hope you like it!",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "wacky background",
+                            "url": "/blender/fireship"
+                        },
+                        {
+                            "type": "link",
+                            "text": "Diglett",
+                            "url": "https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -249,7 +271,14 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "These are some fibre optic cables I made using Andrew Price's [tutorial](https://www.blenderguru.com/tutorials/make-an-abstract-background). I made some variations to give different effects, using the compositor."
+                    "text": "These are some fibre optic cables I made using Andrew Price's ___. I made some variations to give different effects, using the compositor.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "tutorial",
+                            "url": "https://www.blenderguru.com/tutorials/make-an-abstract-background"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -283,7 +312,19 @@
                 },
                 {
                     "type": "text",
-                    "text": "I use the final frame as my desktop wallpaper, and [a modified version](/blender/rp-anim) for [my YouTube channel](https://www.youtube.com/channel/UCuP4DBqZZAC-PPleJTnQspA)."
+                    "text": "I use the final frame as my desktop wallpaper, and ___ for ___.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "a modified version",
+                            "url": "/blender/rp-anim"
+                        },
+                        {
+                            "type": "link",
+                            "text": "my YouTube channel",
+                            "url": "https://www.youtube.com/channel/UCuP4DBqZZAC-PPleJTnQspA"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -319,7 +360,13 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "This is another wallpaper I made, but this is simply a copy of another wallpaper I saw on my friend *James Fraser*'s phone. I challenged myself to recreate it and I think I was quite successful. In retrospect, the bevel on the cubes should have been sharper, and there should have been more red cubes."
+                    "text": "This is another wallpaper I made, but this is simply a copy of another wallpaper I saw on my friend ___'s phone. I challenged myself to recreate it and I think I was quite successful. In retrospect, the bevel on the cubes should have been sharper, and there should have been more red cubes.",
+                    "inserts": [
+                        {
+                            "type": "bold",
+                            "text": "James Fraser"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -337,7 +384,19 @@
                 },
                 {
                     "type": "text",
-                    "text": "[![Original](https://web.archive.org/web/20190109022124if_/http://alltechsols.com/media/images/abstract_black_and_red_cubes-1920x1080_1.jpg)](https://web.archive.org/web/20190109022124/http://alltechsols.com/media/images/abstract_black_and_red_cubes-1920x1080_1.jpg)"
+                    "text": "___ (___)",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "Original",
+                            "url": "https://web.archive.org/web/20190109022124/http://alltechsols.com/media/images/abstract_black_and_red_cubes-1920x1080_1.jpg"
+                        },
+                        {
+                            "type": "link",
+                            "text": "Raw",
+                            "url": "https://web.archive.org/web/20190109022124if_/http://alltechsols.com/media/images/abstract_black_and_red_cubes-1920x1080_1.jpg"
+                        }
+                    ]
                 }
             ]
         },
@@ -414,7 +473,13 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "This was a test to see if I can use a video as a texture. The answer is yes! I made a model of my monitor at the time and used a screen recording of blender. *Blenderception*"
+                    "text": "This was a test to see if I can use a video as a texture. The answer is yes! I made a model of my monitor at the time and used a screen recording of blender. ___",
+                    "inserts": [
+                        {
+                            "type": "bold",
+                            "text": "Blenderception"
+                        }
+                    ]
                 },
                 {
                     "type": "youtube",
@@ -486,7 +551,19 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "Another [wacky](/blender/fireship) [background](/blender/diglett). Randomly decided to model a heart. Based heavily on a single reference image I found of another model. If I recall correctly, I used the skin modifier for the surface vessels. Quite happy with the result, and I used the model for two more projects. The background is using a radial Voronoi texture."
+                    "text": "Another ___ ___. Randomly decided to model a heart. Based heavily on a single reference image I found of another model. If I recall correctly, I used the skin modifier for the surface vessels. Quite happy with the result, and I used the model for two more projects. The background is using a radial Voronoi texture.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "wacky",
+                            "url": "/blender/fireship"
+                        },
+                        {
+                            "type": "link",
+                            "text": "background",
+                            "url": "/blender/diglett"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -507,7 +584,14 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "A reference to [this song](https://www.youtube.com/watch?v=6gviIbLw2AU). Used the heart from before. It is supposed to be laying on the grass \"down by the river\". The reflections in the water are skyscrapers with Japansese neon writing as you'd expect in Tokyo. Not my most realistic render..."
+                    "text": "A reference to ___. Used the heart from before. It is supposed to be laying on the grass \"down by the river\". The reflections in the water are skyscrapers with Japansese neon writing as you'd expect in Tokyo. Not my most realistic render...",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "this song",
+                            "url": "https://www.youtube.com/watch?v=6gviIbLw2AU"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -524,7 +608,19 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "Tried to make something using [Suzanne](https://en.wikipedia.org/wiki/Blender_(software)#Suzanne,_the_%22monkey%22_mascot). Reused the eyes from [Batman](/blender/batman)."
+                    "text": "Tried to make something using ___. Reused the eyes from ___.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "Suzanne",
+                            "url": "https://en.wikipedia.org/wiki/Blender_(software)#Suzanne"
+                        },
+                        {
+                            "type": "link",
+                            "text": "Batman",
+                            "url": "/blender/batman"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -548,7 +644,14 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "Attempt at an alien character. Characters are not my forté... Again, reused the eyes from [Batman](/blender/batman)."
+                    "text": "Attempt at an alien character. Characters are not my forté... Again, reused the eyes from ___.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "Batman",
+                            "url": "/blender/batman"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -622,7 +725,18 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "This is a reference to the Bon Jovi song [Wanted Dead or Alive](https://www.youtube.com/watch?v=SRvCvsRp5ho) in which one of the lines is \"I'm a cowboy, on a __steel horse__ I ride\". I used a diagram of a horse as a reference while modelling. I also looked a t a few pictures of rearing horses for the pose later. Rigging and posing the model was the hardest part as it was my first time. I've very happy with this. I think it looks cool, although mechanically it doesn't make sense!"
+                    "text": "This is a reference to the Bon Jovi song ___ in which one of the lines is \"I'm a cowboy, on a ___ I ride\". I used a diagram of a horse as a reference while modelling. I also looked a t a few pictures of rearing horses for the pose later. Rigging and posing the model was the hardest part as it was my first time. I've very happy with this. I think it looks cool, although mechanically it doesn't make sense!",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "Wanted Dead or Alive",
+                            "url": "https://www.youtube.com/watch?v=SRvCvsRp5ho"
+                        },
+                        {
+                            "type": "italics",
+                            "text": "steel horse"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -650,7 +764,24 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "Experimenting with the [fracture modifier build](https://blenderphysics.com/fracturemodifier/) of blender, I fractured the [heart model](/blender/heart) I had already made. This was inspired from the Bon Jovi song [You Give Love A Bad Name](https://www.youtube.com/watch?v=KrZHPOeOxQQ) in which the first line is \"Shot through the heart\"."
+                    "text": "Experimenting with the ___ of blender, I fractured the ___ I had already made. This was inspired from the Bon Jovi song ___ in which the first line is \"Shot through the heart\".",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "fracture modifier build",
+                            "url": "https://blenderphysics.com/fracturemodifier/"
+                        },
+                        {
+                            "type": "link",
+                            "text": "heart model",
+                            "url": "/blender/heart"
+                        },
+                        {
+                            "type": "link",
+                            "text": "You Give Love A Bad Name",
+                            "url": "https://www.youtube.com/watch?v=KrZHPOeOxQQ"
+                        }
+                    ]
                 },
                 {
                     "type": "youtube",
@@ -681,7 +812,14 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "Exercise using Bezier Curves in Blender. It's the logo from Bon Jovi song [Have A Nice Day](https://www.youtube.com/watch?v=uCg2BoKiuOM). I think I also made the red part leather."
+                    "text": "Exercise using Bezier Curves in Blender. It's the logo from Bon Jovi song ___. I think I also made the red part leather.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "Have A Nice Day",
+                            "url": "https://www.youtube.com/watch?v=uCg2BoKiuOM"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -697,7 +835,19 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "Another [Bon Jovi reference](/blender/heart-fracture). It's referencing [Bad Medicine](https://www.youtube.com/watch?v=uCg2BoKiuOM) in which the first line is \"Your love is like bad medicine\". I got the skull texture from online. I used rigid body simulation for the heart pills. The floor is just something random I came up with. Very happy with the result."
+                    "text": "Another ___. It's referencing ___ in which the first line is \"Your love is like bad medicine\". I got the skull texture from online. I used rigid body simulation for the heart pills. The floor is just something random I came up with. Very happy with the result.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "Bon Jovi reference",
+                            "url": "/blender/heart-fracture"
+                        },
+                        {
+                            "type": "link",
+                            "text": "Bad Medicine",
+                            "url": "https://www.youtube.com/watch?v=uCg2BoKiuOM"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -743,7 +893,14 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "Messing with volume shaders. Just one material and the Default Cube! I was initially trying to make a volumetric version of the thing on [this post](http://durknfred.blogspot.co.uk/2015/02/cycles-voxels.html) by Derek Barker, but it didn't really work out. Nevertheless, I think this is interesting and I quite like it."
+                    "text": "Messing with volume shaders. Just one material and the Default Cube! I was initially trying to make a volumetric version of the thing on ___ by Derek Barker, but it didn't really work out. Nevertheless, I think this is interesting and I quite like it.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "this post",
+                            "url": "http://durknfred.blogspot.co.uk/2015/02/cycles-voxels.html"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -809,7 +966,14 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "As a modelling exercise I decided to make a gun. This is because of the relatively complex shapes. I really enjoyed this hard surface modelling. Then I made the materials, all procedurally, using vertex colours to create a mask for the grip displacement. I was quite happy with the lighting, aiming for a display kind of atmosphere. The wood material is the same as the steering wheel from my [AC Cobra](/blender/cobra)."
+                    "text": "As a modelling exercise I decided to make a gun. This is because of the relatively complex shapes. I really enjoyed this hard surface modelling. Then I made the materials, all procedurally, using vertex colours to create a mask for the grip displacement. I was quite happy with the lighting, aiming for a display kind of atmosphere. The wood material is the same as the steering wheel from my ___.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "AC Cobra",
+                            "url": "/blender/cobra"
+                        }
+                    ]
                 },
                 {
                     "type": "images",
@@ -883,7 +1047,24 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "When I was starting my [YouTube channel](https://www.youtube.com/channel/UCuP4DBqZZAC-PPleJTnQspA) I modified [my previous animation](/blender/rpc-anim) too just be my name. I use this as the intro for all [my guitar videos](https://www.youtube.com/playlist?list=PLRL_yqRoHeK5m2uDthUII_t6TRA487kBG)."
+                    "text": "When I was starting my ___ I modified ___ too just be my name. I use this as the intro for all ___.",
+                    "inserts": [
+                        {
+                            "type": "link",
+                            "text": "YouTube channel",
+                            "url": "https://www.youtube.com/channel/UCuP4DBqZZAC-PPleJTnQspA"
+                        },
+                        {
+                            "type": "link",
+                            "text": "my previous animation",
+                            "url": "/blender/rpc-anim"
+                        },
+                        {
+                            "type": "link",
+                            "text": "my guitar videos",
+                            "url": "https://www.youtube.com/playlist?list=PLRL_yqRoHeK5m2uDthUII_t6TRA487kBG"
+                        }
+                    ]
                 },
                 {
                     "type": "youtube",

@@ -31,11 +31,62 @@ function dateFormat(date) {
   }).format(new Date(dateSplit[2], dateSplit[1] - 1, dateSplit[0]));
 }
 
+function displayTextInsert(insert) {
+  switch (insert.type) {
+    case "link":
+      if (insert.url[0] === "/") {
+        return (
+          <Interactive as={Link} to={insert.url} className="link">
+            {insert.text}
+          </Interactive>
+        );
+      }
+      return (
+        <a href={insert.url} className="link">
+          {insert.text}
+        </a>
+      );
+    case "bold":
+      return <strong>{insert.text}</strong>;
+    case "italics":
+      return <em>{insert.text}</em>;
+    default:
+      throw new Error(`unknown text insert type: ${insert.type}`);
+  }
+}
+
+function displayText(element) {
+  const split = element.text.split(/(___)/g);
+  if (split.length === 1 && element.inserts == null) {
+    return element.text;
+  }
+  if (
+    element.inserts == null ||
+    split.length - 1 !== 2 * element.inserts.length
+  ) {
+    throw new Error(
+      `mismatched inserts: split ${split.length}, inserts ${element.inserts.length}`,
+    );
+  }
+  var insertsIter = element.inserts.entries();
+  return (
+    // TODO: fix padding error on random cubes and others
+    <p style={element.style}>
+      {split.map((part) => {
+        if (part === "___") {
+          return displayTextInsert(insertsIter.next().value[1]);
+        }
+        return part;
+      })}
+    </p>
+  );
+}
+
 function displayElement(element, projectName) {
   const subfolder = element.subfolder == null ? "" : `/${element.subfolder}`;
   switch (element.type) {
     case "text":
-      return <p style={element.style}>{element.text}</p>; // TODO: format text
+      return displayText(element);
     case "images":
       // TODO: consider fixed height
       return (
