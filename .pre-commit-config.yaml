@@ -1,0 +1,11 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/skarfie123/pre-commit
+    rev: 968a217a627ad7f575a35a9987564e0c8f8888b1
+    hooks:
+      - id: pygrep-todo
