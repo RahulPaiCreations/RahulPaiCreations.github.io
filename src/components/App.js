@@ -2,7 +2,6 @@ import React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import About from "./About";
 import Blender from "./Blender";
-import BlenderOld from "./BlenderOld";
 import Home from "./Home";
 import PageNotFound from "./PageNotFound";
 
@@ -20,9 +19,6 @@ export default function App() {
         <NavLink to="/blender" activeClassName="activeNav">
           Blender
         </NavLink>
-        <NavLink to="/blenderold" activeClassName="activeNav">
-          BlenderOld
-        </NavLink>
         <NavLink to="/about" activeClassName="activeNav">
           About
         </NavLink>
@@ -33,7 +29,6 @@ export default function App() {
           <Route exact path="/" render={() => <Redirect to="/home" />} />
           <Route exact path="/home" component={Home} />
           <Route path="/blender" component={Blender} />
-          <Route path="/blenderold" component={BlenderOld} />
           <Route path="/about" component={About} />
           <Route component={PageNotFound} />
         </Switch>
