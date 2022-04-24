@@ -58,7 +58,7 @@ function displayTextInsert(insert) {
 function displayText(element) {
   const split = element.text.split(/(___)/g);
   if (split.length === 1 && element.inserts == null) {
-    return element.text;
+    return <p style={element.style}>{element.text}</p>;
   }
   if (
     element.inserts == null ||
@@ -68,9 +68,8 @@ function displayText(element) {
       `mismatched inserts: split ${split.length}, inserts ${element.inserts.length}`,
     );
   }
-  var insertsIter = element.inserts.entries();
+  const insertsIter = element.inserts.entries();
   return (
-    // TODO: fix padding error on random cubes and others
     <p style={element.style}>
       {split.map((part) => {
         if (part === "___") {
@@ -88,7 +87,6 @@ function displayElement(element, projectName) {
     case "text":
       return displayText(element);
     case "images":
-      // TODO: consider fixed height
       return (
         <div style={element.style}>
           <Carousel

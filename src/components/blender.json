@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "blenderSchema.json",
     "projects": [
         {
@@ -42,7 +42,11 @@
                     "aspectRatio": [
                         65,
                         57
-                    ]
+                    ],
+                    "style": {
+                        "width": "75%",
+                        "margin": "auto"
+                    }
                 }
             ]
         },
@@ -380,11 +384,7 @@
                 },
                 {
                     "type": "text",
-                    "text": "Below is the original that I tried to copy:"
-                },
-                {
-                    "type": "text",
-                    "text": "___ (___)",
+                    "text": "This is the original that I tried to copy: ___ (___)",
                     "inserts": [
                         {
                             "type": "link",
@@ -494,7 +494,7 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": ""
+                    "text": "Ray Ban Glasses were a nice modelling exercise. Dodgy attempt at the logo texture. For some reason I made a kind of pedestal to put it on."
                 },
                 {
                     "type": "images",
@@ -541,7 +541,11 @@
                     "aspectRatio": [
                         1,
                         1
-                    ]
+                    ],
+                    "style": {
+                        "width": "50%",
+                        "margin": "auto"
+                    }
                 }
             ]
         },
@@ -573,7 +577,11 @@
                     "aspectRatio": [
                         1,
                         1
-                    ]
+                    ],
+                    "style": {
+                        "width": "50%",
+                        "margin": "auto"
+                    }
                 }
             ]
         },
@@ -632,7 +640,7 @@
                         16
                     ],
                     "style": {
-                        "width": "50%",
+                        "width": "30%",
                         "margin": "auto"
                     }
                 }
@@ -912,7 +920,11 @@
                     "aspectRatio": [
                         1,
                         1
-                    ]
+                    ],
+                    "style": {
+                        "width": "50%",
+                        "margin": "auto"
+                    }
                 }
             ]
         },
@@ -1015,7 +1027,11 @@
                     "aspectRatio": [
                         1,
                         1
-                    ]
+                    ],
+                    "style": {
+                        "width": "50%",
+                        "margin": "auto"
+                    }
                 }
             ]
         },
@@ -1047,11 +1063,11 @@
             "elements": [
                 {
                     "type": "text",
-                    "text": "When I was starting my ___ I modified ___ too just be my name. I use this as the intro for all ___.",
+                    "text": "When I was starting ___ I modified ___ too just be my name. I use this as the intro for all ___.",
                     "inserts": [
                         {
                             "type": "link",
-                            "text": "YouTube channel",
+                            "text": "my YouTube channel",
                             "url": "https://www.youtube.com/channel/UCuP4DBqZZAC-PPleJTnQspA"
                         },
                         {
@@ -1107,7 +1123,11 @@
                     "aspectRatio": [
                         1,
                         1
-                    ]
+                    ],
+                    "style": {
+                        "width": "50%",
+                        "margin": "auto"
+                    }
                 }
             ]
         }
