@@ -1,149 +1,196 @@
 import React from "react";
 import Interactive from "react-interactive";
-import { Switch, Route, Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
+import blender from "./blender.json"; // TODO: use Axios or fetch to get this dynamically
+import Carousel from "./Carousel";
 import PageNotFound from "./PageNotFound";
-import Fireship from "./blender/Fireship";
-import Coke from "./blender/Coke";
-import Lamp from "./blender/Lamp";
-import Spaceship from "./blender/Spaceship";
-import RPC from "./blender/RPC";
-import Parker from "./blender/Parker";
-import Liquid from "./blender/Liquid";
-import KEGS10Y from "./blender/KEGS10Y";
-import Cityscape from "./blender/Cityscape";
-import Pokeballs from "./blender/Pokeballs";
-import Kitchen from "./blender/Kitchen";
-import Diglett from "./blender/Diglett";
-import FibreOptics from "./blender/FibreOptics";
-import Hexo from "./blender/Hexo";
-import RandomCubes from "./blender/RandomCubes";
-import Fireball from "./blender/Fireball";
-import Window from "./blender/Window";
-import Glasses from "./blender/Glasses";
-import Flower from "./blender/Flower";
-import Screen from "./blender/Screen";
-import RayBan from "./blender/RayBan";
-import Elucidator from "./blender/Elucidator";
-import Batman from "./blender/Batman";
-import Heart from "./blender/Heart";
-import HeartRiver from "./blender/HeartRiver";
-import Monkey from "./blender/Monkey";
-import Alien from "./blender/Alien";
-import Blerb from "./blender/Blerb";
-import Cobra from "./blender/Cobra";
-import HeartFracture from "./blender/HeartFracture";
-import Bubble from "./blender/Bubble";
-import NiceDay from "./blender/NiceDay";
-import BadMedicine from "./blender/BadMedicine";
-import RPCAnim from "./blender/RPCAnim";
-import Wavey from "./blender/Wavey";
-import Room from "./blender/Room";
 
-//later
-import RPAnim from "./blender/RPAnim";
-import VolumeCube from "./blender/VolumeCube";
-import Octagons from "./blender/Octagons";
-import LegoWater from "./blender/LegoWater";
-import RobotSculpt from "./blender/RobotSculpt";
-import Gun from "./blender/Gun";
-import Torso from "./blender/Torso";
-import CharlieBrown from "./blender/CharlieBrown";
-import SteelHorse from "./blender/SteelHorse";
-import RedSaturation from "./blender/RedSaturation";
-import ProductDesign from "./blender/ProductDesign";
-import BlueReact from "./blender/BlueReact";
+function toTitleCase(str) {
+  return str
+    .replace(/-/g, " ")
+    .replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1));
+}
+
+function projectTitle(project) {
+  return project.title == null ? toTitleCase(project.name) : project.title;
+}
+
+function dateFormat(date) {
+  if (date == null) {
+    return "";
+  }
+  const dateSplit = date.split("/");
+  if (dateSplit.length !== 3) {
+    return date;
+  }
+  // TODO: consider using a better formatter like MomentJS
+  return Intl.DateTimeFormat("en-GB", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  }).format(new Date(dateSplit[2], dateSplit[1] - 1, dateSplit[0]));
+}
+
+function displayTextInsert(insert) {
+  switch (insert.type) {
+    case "link":
+      if (insert.url[0] === "/") {
+        return (
+          <Interactive as={Link} to={insert.url} className="link">
+            {insert.text}
+          </Interactive>
+        );
+      }
+      return (
+        <a href={insert.url} className="link">
+          {insert.text}
+        </a>
+      );
+    case "bold":
+      return <strong>{insert.text}</strong>;
+    case "italics":
+      return <em>{insert.text}</em>;
+    default:
+      throw new Error(`unknown text insert type: ${insert.type}`);
+  }
+}
+
+function displayText(element) {
+  const split = element.text.split(/(___)/g);
+  if (split.length === 1 && element.inserts == null) {
+    return <p style={element.style}>{element.text}</p>;
+  }
+  if (
+    element.inserts == null ||
+    split.length - 1 !== 2 * element.inserts.length
+  ) {
+    throw new Error(
+      `mismatched inserts: split ${split.length}, inserts ${element.inserts.length}`,
+    );
+  }
+  const insertsIter = element.inserts.entries();
+  return (
+    <p style={element.style}>
+      {split.map((part) => {
+        if (part === "___") {
+          return displayTextInsert(insertsIter.next().value[1]);
+        }
+        return part;
+      })}
+    </p>
+  );
+}
+
+function displayElement(element, projectName) {
+  const subfolder = element.subfolder == null ? "" : `/${element.subfolder}`;
+  switch (element.type) {
+    case "text":
+      return displayText(element);
+    case "images":
+      return (
+        <div style={element.style}>
+          <Carousel
+            folder={`../../assets/${projectName}${subfolder}`}
+            captions={element.captions}
+            aspectRatio={element.aspectRatio}
+          />
+        </div>
+      );
+    case "youtube":
+      return (
+        <iframe
+          width="800vw"
+          height="450vw"
+          src={`https://www.youtube-nocookie.com/embed/${element.id}`}
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullscreen="1"
+          className="youtube"
+          style={element.style}
+        />
+      );
+    default:
+      throw new Error(`unknown element type: ${element.type}`);
+  }
+}
+
+function blenderLink(project, index) {
+  return (
+    <div className="blenderLink">
+      <Interactive as={Link} to={`/blender/${project.name}`}>
+        <img
+          src={`../../assets/${project.name}/thumbnail.jpg`}
+          alt="thumbnail"
+        />
+        {/* // TODO: should this be TitleDate? */}
+        <div className="titleDate">
+          <div className="title">
+            <em>
+              {index + 1}. {projectTitle(project)}
+            </em>
+          </div>
+          <div className="date">{dateFormat(project.date)}</div>
+        </div>
+      </Interactive>
+    </div>
+  );
+}
 
 export default function Blender() {
-  const blenderProjects = {
-    fireship: Fireship,
-    coke: Coke,
-    lamp: Lamp,
-    spaceship: Spaceship,
-    rpc: RPC,
-    parker: Parker,
-    liquid: Liquid,
-    "kegs-10y": KEGS10Y,
-    cityscape: Cityscape,
-    pokeballs: Pokeballs,
-    kitchen: Kitchen,
-    diglett: Diglett,
-    "fibre-optics": FibreOptics,
-    "rpc-anim": RPCAnim,
-    hexo: Hexo,
-    "random-cubes": RandomCubes,
-    fireball: Fireball,
-    window: Window,
-    glasses: Glasses,
-    flower: Flower,
-    screen: Screen,
-    "ray-ban": RayBan,
-    elucidator: Elucidator,
-    batman: Batman,
-    heart: Heart,
-    "heart-river": HeartRiver,
-    monkey: Monkey,
-    alien: Alien,
-    blerb: Blerb,
-    cobra: Cobra,
-    "steel-horse": SteelHorse,
-    "heart-fracture": HeartFracture,
-    bubble: Bubble,
-    "have-a-nice-day": NiceDay,
-    "bad-medicine": BadMedicine,
-    wavey: Wavey,
-    room: Room,
-    "volume-cube": VolumeCube,
-    octagons: Octagons,
-    "lego-water": LegoWater,
-    "robot-sculpt": RobotSculpt,
-    gun: Gun,
-    torso: Torso,
-    "charlie-brown": CharlieBrown,
-    "red-saturation": RedSaturation,
-    "rp-anim": RPAnim,
-    "product-design": ProductDesign,
-    "blue-react": BlueReact,
-  };
   return (
-    <div>
+    <React.Fragment>
       <Switch>
-        {Object.keys(blenderProjects).map(
-          (name) => (
+        {blender.projects.map(
+          (project, index) => (
             <Route
               exact
-              path={`/blender/${name}`}
-              component={blenderProjects[name]}
+              path={`/blender/${project.name}`}
+              render={() => (
+                <React.Fragment>
+                  {/* // TODO: should this be TitleDate? */}
+                  <div className="titleDate">
+                    <h1
+                      className="title titleLarge"
+                      style={{ display: "inline" }}
+                    >
+                      {index + 1}. {projectTitle(project)}
+                    </h1>
+                    {project.alias != null &&
+                      project.alias.trim().length > 0 && (
+                        <div className="alias">&quot;{project.alias}&quot;</div>
+                      )}
+                    <div className="date">{dateFormat(project.date)}</div>
+                  </div>
+                  {project.elements != null &&
+                    project.elements.map((element) =>
+                      displayElement(element, project.name),
+                    )}
+                  <br />
+                  <div>
+                    {index > 0 &&
+                      blenderLink(blender.projects[index - 1], index - 1)}
+                    {index < blender.projects.length - 1 &&
+                      blenderLink(blender.projects[index + 1], index + 1)}
+                  </div>
+                </React.Fragment>
+              )}
             />
           ),
-          this
+          this,
         )}
         <Route
           exact
           path="/blender"
           render={() => (
-            <div>
-              <div className="otherBanner banner"></div>
+            <React.Fragment>
+              <div className="otherBanner banner" />
               <h1 className="title titleLarge">Blender</h1>
-              {Object.keys(blenderProjects).map(
-                (name, index) => (
-                  <div className="blenderLink">
-                    <Interactive as={Link} to={`/blender/${name}`}>
-                      <img src={`../../assets/${name}/thumbnail.jpg`} />
-                      <div className="title">
-                        <em>
-                          {index + 1}. {name.toUpperCase().replace("-", " ")}
-                        </em>
-                      </div>
-                    </Interactive>
-                  </div>
-                ),
-                this
-              )}
-            </div>
+              {blender.projects.map(blenderLink, this)}
+            </React.Fragment>
           )}
         />
         <Route component={PageNotFound} />
       </Switch>
-    </div>
+    </React.Fragment>
   );
 }

@@ -1,16 +1,15 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Link, Switch, Route, NavLink, Redirect } from "react-router-dom";
-import Home from "./Home";
-import Blender from "./Blender";
+import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import About from "./About";
+import Blender from "./Blender";
+import Home from "./Home";
 import PageNotFound from "./PageNotFound";
 
 export default function App() {
   return (
     <div className="appRoot">
       <Link to="/home">
-        <img src="../../assets/rpc_logo.svg" className="logo" />
+        <img src="../../assets/rpc_logo.svg" alt="RPC Logo" className="logo" />
       </Link>
 
       <nav>

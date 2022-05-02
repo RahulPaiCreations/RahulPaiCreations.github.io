@@ -1,11 +1,9 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Link } from "react-router-dom";
 
 export default function About() {
   return (
-    <div>
-      <div className="otherBanner banner"></div>
+    <React.Fragment>
+      <div className="otherBanner banner" />
       <h1 className="title titleLarge">About</h1>
       <p>
         I used{" "}
@@ -28,6 +26,6 @@ export default function About() {
         </a>
         .
       </p>
-    </div>
+    </React.Fragment>
   );
 }

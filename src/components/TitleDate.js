@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 import PropTypes from "prop-types";
+import React, { Component } from "react";
 
 export default class TitleDate extends Component {
   static propTypes = {
@@ -15,7 +15,7 @@ export default class TitleDate extends Component {
           {this.props.title}
         </h1>
         {this.props.alias != null && this.props.alias.trim().length > 0 && (
-          <div className="alias">"{this.props.alias}"</div>
+          <div className="alias">&quot;{this.props.alias}&quot;</div>
         )}
         <div className="date">{this.props.date}</div>
       </div>

@@ -1,11 +1,9 @@
 import React from "react";
-import Interactive from "react-interactive";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div>
-      <div className="homeBanner banner"></div>
+    <React.Fragment>
+      <div className="homeBanner banner" />
       <p>
         Hi, I'm Rahul Pai. I am an Engineering student at the University of
         Cambridge. On this website I show various projects I have done in my own
@@ -15,6 +13,6 @@ export default function Home() {
         Java for Android app development and C++ for various coursework projects
         at Uni.
       </p>
-    </div>
+    </React.Fragment>
   );
 }
